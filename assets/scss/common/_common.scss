@@ -1,0 +1,65 @@
+@use '../variables' as *;
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  scroll-behavior: auto;
+
+  font-family: $fontFamilySansSerif;
+  font-size: $fontSizeBasic;
+  line-height: $fontLineHeightBasic;
+  background-color: $bodyBackgroundColor;
+  text-rendering: optimizeLegibility;
+  color: $whiteColor;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  color: $whiteColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  flex-grow: 1;
+}
+
+textarea {
+  resize: none;
+  height: 200px;
+}
+
+pre {
+  white-space: break-spaces;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page-content {
+  margin-top: 120px;
+}
