@@ -4,6 +4,7 @@
     <main class="page-content">
       <slot />
     </main>
+    <TheFooter />
   </div>
 </template>
 

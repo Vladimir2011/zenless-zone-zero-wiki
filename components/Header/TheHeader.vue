@@ -3,15 +3,23 @@
     <div class="container">
       <div class="header-wrapper">
         <nuxt-link to="/" class="header-logo">
-          <nuxt-img src="/logo.svg" alt="logo" width="48px" height="48px" />
+          <nuxt-img src="/logo.svg" alt="logo" width="36px" height="36px" />
           <span class="logo-text">WIKI</span>
         </nuxt-link>
+
+        <HeaderNavList>
+          <HeaderNavListItem v-for="navItem in HEADER_NAVIGATION" :key="navItem.title" :nav-item="navItem" />
+        </HeaderNavList>
+
+        <AppSocialLinks />
       </div>
     </div>
   </header>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const { HEADER_NAVIGATION } = useConstants()
+</script>
 
 <style scoped lang="scss">
 @use 'assets/scss/variables' as *;
@@ -36,7 +44,7 @@ header {
       gap: 8px;
 
       .logo-text {
-        font-size: 32px;
+        font-size: 24px;
         font-weight: 700;
       }
     }

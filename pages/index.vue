@@ -1,7 +1,11 @@
 <template>
-  <div class="container">Главная</div>
+  <div class="container">
+    <SliderBanner />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use 'assets/scss/variables' as *;
+</style>
