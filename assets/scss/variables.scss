@@ -12,6 +12,8 @@ $whiteColor: #fff;
 $blackColor: #000;
 $greyColor: #747c81;
 $cardBackgroundColor: #1e2224;
+$nestedCardBackgroundColor: #262a2c;
+$sectionTitleColorText: #dce6eb;
 
 
 // Border radius
@@ -27,4 +29,14 @@ $borderRadiusCard: 16px;
   border-radius: $borderRadiusCard;
   background-color: $cardBackgroundColor;
   padding: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 12px;
+  }
+}
+
+@mixin nested-card {
+  border-radius: $borderRadiusCard;
+  background-color: $nestedCardBackgroundColor;
+  padding: 12px;
 }
