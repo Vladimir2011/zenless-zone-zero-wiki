@@ -1,39 +1,28 @@
 <template>
-  <div class="characters-list-slider">
-    <Splide class="slider-list" :options="sliderOptions" :extensions="{ AutoScroll }">
-      <SplideSlide v-for="character in charactersList" :key="character.id" class="slider-item">
-        <CharacterCard :character="character" />
+  <div class="factions-list-slider">
+    <Splide class="slider-list" :options="sliderOptions">
+      <SplideSlide v-for="faction in factionsList" :key="faction.id" class="slider-item">
+        <FactionCard :faction="faction" />
       </SplideSlide>
     </Splide>
   </div>
 </template>
 
 <script setup lang="ts">
-import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
-const charactersStore = useCharactersStore()
-const { charactersList } = storeToRefs(charactersStore)
-
 const sliderOptions = {
   type: 'loop',
   rewind: true,
-  width: '100%',
-  height: '100%',
-  perPage: 5,
+  perPage: 3,
   updateOnMove: true,
   arrows: true,
   perMove: 1,
   pagination: false,
   accessibility: true,
-  autoplay: false,
   interval: 3000,
   cover: true,
   gap: '10px',
-  speed: 500,
-  drag: 'free',
-  autoScroll: {
-    speed: 1
-  },
-
+  padding: '3rem',
+  focus: 'center',
   breakpoints: {
     1200: {
       perPage: 4
@@ -57,8 +46,21 @@ const sliderOptions = {
     page: 'splide__pagination__page slider-pagination-item'
   }
 }
+const factionStore = useFactionsStore()
+
+const { factionsList } = storeToRefs(factionStore)
 </script>
 
 <style scoped lang="scss">
 @use 'assets/scss/variables' as *;
+
+.slider-list {
+  .slider-item {
+    opacity: 0.2;
+  }
+
+  .is-active {
+    opacity: 1;
+  }
+}
 </style>

@@ -26,9 +26,9 @@ $borderRadiusCard: 16px;
 // Mixins
 
 @mixin card {
+  padding: 20px;
   border-radius: $borderRadiusCard;
   background-color: $cardBackgroundColor;
-  padding: 20px;
 
   @media screen and (max-width: 768px) {
     padding: 12px;

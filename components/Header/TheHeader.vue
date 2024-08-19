@@ -4,7 +4,6 @@
       <div class="header-wrapper">
         <nuxt-link to="/" class="header-logo">
           <nuxt-img src="/logo.svg" alt="logo" width="36px" height="36px" />
-          <span class="logo-text">WIKI</span>
         </nuxt-link>
 
         <HeaderNavList>

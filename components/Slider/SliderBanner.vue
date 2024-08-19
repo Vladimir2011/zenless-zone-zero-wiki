@@ -52,6 +52,7 @@ const mainSliderOptions = {
 @use 'assets/scss/variables' as *;
 
 .main-banner-slider {
+  margin-bottom: 20px;
   @include card;
 
   .banner-image {

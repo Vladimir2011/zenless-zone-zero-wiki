@@ -5,7 +5,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
     charactersList: [
       {
         id: 1,
-        name: 'Qingyi',
+        name: 'Цинъи',
         link: '/characters/qingyi',
         image: 'qingyi/qingyi-card-image.webp',
         icons: {
@@ -17,7 +17,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 2,
-        name: 'Zhu Yuan',
+        name: 'Чжу Юань',
         link: '/characters/zhuyuan',
         image: 'zhu-yuan/zhu-yuan-card-image.webp',
         icons: {
@@ -29,7 +29,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 3,
-        name: 'Ellen',
+        name: 'Эллен',
         link: '/characters/ellen',
         image: 'ellen/ellen-card-image.webp',
         icons: {
@@ -41,7 +41,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 4,
-        name: 'Lycaon',
+        name: 'Ликаон',
         link: '/characters/lycaon',
         image: 'lycaon/lycaon-card-image.webp',
         icons: {
@@ -53,7 +53,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 5,
-        name: 'Jane Doe',
+        name: 'Джейн Доу',
         link: '/characters/janedoe',
         image: 'jane-doe/jane-doe-card-image.webp',
         icons: {
@@ -65,7 +65,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 6,
-        name: 'Anby',
+        name: 'Энби',
         link: '/characters/anby',
         image: 'anby/anby-doe-card-image.webp',
         icons: {
@@ -77,7 +77,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 7,
-        name: 'Corin',
+        name: 'Корин',
         link: '/characters/corin',
         image: 'corin/corin-card-image.webp',
         icons: {
@@ -89,7 +89,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 8,
-        name: 'Seth',
+        name: 'Сет',
         link: '/characters/seth',
         image: 'seth/seth-card-image.webp',
         icons: {
@@ -101,7 +101,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 9,
-        name: 'Nekomata',
+        name: 'Нэкомата',
         link: '/characters/nekomata',
         image: 'nekomata/nekomata-card-image.webp',
         icons: {
@@ -113,7 +113,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 10,
-        name: 'Anton',
+        name: 'Антон',
         link: '/characters/anton',
         image: 'anton/anton-card-image.webp',
         icons: {
@@ -125,7 +125,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 11,
-        name: 'Soldier 11',
+        name: 'Солдат 11',
         link: '/characters/soldier11',
         image: 'soldier11/soldier11-card-image.webp',
         icons: {
@@ -137,7 +137,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 12,
-        name: 'Ben',
+        name: 'Бен',
         link: '/characters/ben',
         image: 'ben/ben-card-image.webp',
         icons: {
@@ -149,7 +149,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 13,
-        name: 'Grace',
+        name: 'Грейс',
         link: '/characters/grace',
         image: 'grace/grace-card-image.webp',
         icons: {
@@ -161,7 +161,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 14,
-        name: 'Nicole',
+        name: 'Николь',
         link: '/characters/nicole',
         image: 'nicole/nicole-card-image.webp',
         icons: {
@@ -173,7 +173,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 15,
-        name: 'Soukaku',
+        name: 'Сокаку',
         link: '/characters/soukaku',
         image: 'soukaku/soukaku-card-image.webp',
         icons: {
@@ -185,7 +185,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 16,
-        name: 'Billy',
+        name: 'Билли',
         link: '/characters/billy',
         image: 'billy/billy-card-image.webp',
         icons: {
@@ -197,7 +197,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 17,
-        name: 'Piper',
+        name: 'Пайпер',
         link: '/characters/piper',
         image: 'piper/piper-card-image.webp',
         icons: {
@@ -209,7 +209,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 18,
-        name: 'Koleda',
+        name: 'Коляда',
         link: '/characters/koleda',
         image: 'koleda/koleda-card-image.webp',
         icons: {
@@ -221,7 +221,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 19,
-        name: 'Lucy',
+        name: 'Люси',
         link: '/characters/lucy',
         image: 'lucy/lucy-card-image.webp',
         icons: {
@@ -233,7 +233,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       },
       {
         id: 20,
-        name: 'Rina',
+        name: 'Рина',
         link: '/characters/rina',
         image: 'rina/rina-card-image.webp',
         icons: {

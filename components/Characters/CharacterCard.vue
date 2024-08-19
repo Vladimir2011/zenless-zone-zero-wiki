@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="character.link" class="characters-card">
+  <nuxt-link :to="character.link" class="character-card">
     <nuxt-img :src="`/characters/${character.image}`" :alt="character.name" class="character-image" />
     <ul class="icons-list">
       <li class="icon-item">
@@ -33,7 +33,7 @@ const props = defineProps({
 <style scoped lang="scss">
 @use 'assets/scss/variables' as *;
 
-.characters-card {
+.character-card {
   @include nested-card;
   position: relative;
 

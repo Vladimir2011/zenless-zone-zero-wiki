@@ -6,6 +6,11 @@
       <h2 class="section-title">Персонажи</h2>
       <SliderCharacters />
     </section>
+
+    <section class="section factions-section">
+      <h2 class="section-title">Фракции</h2>
+      <SliderFactions />
+    </section>
   </div>
 </template>
 
@@ -15,8 +20,8 @@
 @use 'assets/scss/variables' as *;
 
 .section {
+  margin-bottom: 20px;
   @include card;
-  margin-top: 20px;
 
   .section-title {
     font-size: 26px;
