@@ -53,7 +53,6 @@
         font-weight: 700;
         color: $whiteColor;
         font-size: 14px;
-        text-align: end;
       }
     }
 
