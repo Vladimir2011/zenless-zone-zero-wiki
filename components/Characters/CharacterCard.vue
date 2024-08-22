@@ -36,6 +36,10 @@ const props = defineProps({
 .character-card {
   @include nested-card;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 12px;
 
   @media (hover: hover) {
     &:hover {
@@ -46,6 +50,7 @@ const props = defineProps({
   .character-image {
     width: 100%;
     height: 100%;
+    filter: drop-shadow(2px 4px 0 rgba(0, 0, 0, 0.6));
   }
 
   .icons-list {
@@ -86,6 +91,8 @@ const props = defineProps({
     font-size: 24px;
     line-height: 1;
     font-weight: 600;
+    width: fit-content;
+    text-shadow: rgba(255, 255, 255, 0.6) 0 2px 6px;
 
     @media screen and (max-width: 550px) {
       font-size: 18px;

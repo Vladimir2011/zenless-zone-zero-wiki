@@ -243,6 +243,16 @@ export const useCharactersStore = defineStore('CharactersStore', {
           faction: 'victoria-faction.png'
         }
       }
+    ],
+    charactersPageBreadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Персонажи',
+        link: '/characters'
+      }
     ]
   })
 })

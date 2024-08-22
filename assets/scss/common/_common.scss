@@ -46,6 +46,17 @@ pre {
   white-space: break-spaces;
 }
 
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+
+  @media screen and (max-width: 550px) {
+    font-size: 24px;
+  }
+}
+
 .page-wrapper {
   min-height: 100vh;
   position: relative;

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1 class="visually-hidden">База данных по игре Zenless Zone Zero</h1>
     <SliderBanner />
 
     <section class="section characters-section">
