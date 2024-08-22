@@ -20,6 +20,7 @@ const { charactersPageBreadcrumbs, charactersList } = storeToRefs(charactersStor
 
 .characters-wrapper {
   @include card;
+  margin-bottom: 20px;
 
   .grid-characters {
     display: grid;
