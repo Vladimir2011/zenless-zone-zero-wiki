@@ -73,6 +73,10 @@ h1 {
 
 .page-content {
   margin-top: 92px;
+
+  @media screen and (max-width: 550px) {
+    margin-top: 82px;
+  }
 }
 
 // Слайдер (стрелочки)

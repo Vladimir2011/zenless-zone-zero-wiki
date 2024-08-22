@@ -46,10 +46,10 @@ const props = withDefaults(defineProps<BreadcrumbsProps>(), {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
   list-style: none;
   @media screen and (max-width: 768px) {
-    margin: 12px 0;
+    margin: 0 0 15px 0;
   }
   .breadcrumb-item {
     display: flex;
@@ -67,17 +67,21 @@ const props = withDefaults(defineProps<BreadcrumbsProps>(), {
       padding: 8px;
       background-color: $nestedCardBackgroundColor;
       border-radius: 8px;
-      &:hover {
-        background-color: $greyColor;
+      @media (hover: hover) {
+        &:hover {
+          background-color: $greyColor;
+        }
       }
     }
 
     .breadcrumb-item-link--last {
       padding: 8px;
-      color: $greyColor;
-      background-color: transparent;
-      &:hover {
-        background-color: transparent;
+      color: rgba($whiteColor, 0.5);
+      background-color: $nestedCardBackgroundColor;
+      @media (hover: hover) {
+        &:hover {
+          background-color: $nestedCardBackgroundColor;
+        }
       }
     }
   }
