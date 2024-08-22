@@ -46,6 +46,11 @@ const props = defineProps({
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+
+    @media screen and (max-width: 550px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   .faction-description {

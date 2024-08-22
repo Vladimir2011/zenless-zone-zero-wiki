@@ -11,6 +11,11 @@
       <h2 class="section-title">Фракции</h2>
       <SliderFactions />
     </section>
+
+    <section class="section news-section">
+      <h2 class="section-title">Новости</h2>
+      <NewsList />
+    </section>
   </div>
 </template>
 
@@ -30,6 +35,11 @@
     color: $sectionTitleColorText;
 
     margin-bottom: 20px;
+
+    @media screen and (max-width: 550px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }
 </style>

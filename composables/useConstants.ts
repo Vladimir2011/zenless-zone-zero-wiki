@@ -1,27 +1,4 @@
 export const useConstants = () => {
-  const HEADER_NAVIGATION = [
-    {
-      id: 1,
-      title: 'Главная',
-      link: '/'
-    },
-    {
-      id: 2,
-      title: 'Персонажи',
-      link: '/characters'
-    },
-    {
-      id: 3,
-      title: 'Фракции',
-      link: '/fractions'
-    },
-    {
-      id: 4,
-      title: 'Новости',
-      link: '/news'
-    }
-  ]
-
   const SOCIAL_LINKS = [
     {
       id: 1,
@@ -56,7 +33,6 @@ export const useConstants = () => {
   ]
 
   return {
-    HEADER_NAVIGATION,
     SOCIAL_LINKS
   }
 }

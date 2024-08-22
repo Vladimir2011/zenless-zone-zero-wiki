@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-wrapper">
-        <div class="footer-block">
+        <div class="footer-block footer-block--text">
           <p class="footer-text">
             Zenless Zone Zero™ является зарегистрированным товарным знаком компании MiHoYo Co., Ltd.
           </p>
@@ -11,7 +11,7 @@
           </p>
         </div>
 
-        <div class="footer-block">
+        <div class="footer-block footer-block--copyright">
           <AppSocialLinks />
           <p class="footer-text copyright">© {{ new Date().getFullYear() }} ZZZWiki.ru, Все права защищены</p>
         </div>
@@ -30,13 +30,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 10px 0;
-    border-top: 1px solid $whiteColor;
+    border-top: 2px solid $greyColor;
+    gap: 15px;
 
     .footer-block {
       display: flex;
       flex-direction: column;
       gap: 15px;
+
+      &:deep(.social-links-list) {
+        justify-content: flex-end;
+      }
 
       .footer-text {
         font-weight: 400;
@@ -47,6 +53,25 @@
         font-weight: 700;
         color: $whiteColor;
         font-size: 14px;
+        text-align: end;
+      }
+    }
+
+    .footer-block--text {
+      align-items: flex-start;
+    }
+
+    .footer-block--copyright {
+      @media screen and (max-width: 1200px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
       }
     }
   }

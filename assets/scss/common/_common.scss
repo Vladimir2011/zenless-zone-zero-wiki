@@ -57,9 +57,52 @@ pre {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 16px;
 }
 
 .page-content {
   margin-top: 92px;
 }
+
+// Слайдер (стрелочки)
+
+.slider-arrows {
+  position: absolute;
+  top: -10%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 25px;
+
+  @media screen and (max-width: 550px) {
+    top: -9%;
+  }
+  .slider-arrow {
+    background-color: $nestedCardBackgroundColor;
+    top: -10%;
+    opacity: 1;
+    position: static;
+
+    svg {
+      fill: $whiteColor;
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .slider-prev-arrow {
+    left: 0;
+  }
+
+  .slider-next-arrow {
+    right: 0;
+  }
+}
+
+

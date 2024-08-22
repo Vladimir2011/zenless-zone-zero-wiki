@@ -31,7 +31,9 @@ $borderRadiusCard: 16px;
   background-color: $cardBackgroundColor;
 
   @media screen and (max-width: 768px) {
-    padding: 12px;
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
   }
 }
 

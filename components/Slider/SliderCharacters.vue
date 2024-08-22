@@ -45,7 +45,10 @@ const sliderOptions = {
       perPage: 2
     },
     550: {
-      perPage: 2
+      perPage: 1,
+      height: 'auto',
+      width: 'auto',
+      fixedWidth: '288px'
     }
   },
   classes: {

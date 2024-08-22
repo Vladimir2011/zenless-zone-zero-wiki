@@ -24,17 +24,15 @@ const sliderOptions = {
   padding: '3rem',
   focus: 'center',
   breakpoints: {
-    1200: {
-      perPage: 4
-    },
     991: {
-      perPage: 3
+      perPage: 2
     },
     768: {
-      perPage: 2
+      perPage: 2,
+      padding: 0
     },
     550: {
-      perPage: 2
+      perPage: 1
     }
   },
   classes: {
@@ -57,10 +55,38 @@ const { factionsList } = storeToRefs(factionStore)
 .slider-list {
   .slider-item {
     opacity: 0.2;
+    cursor: auto;
+    pointer-events: none;
   }
 
   .is-active {
     opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  // Слайдер (стрелочки)
+
+  .slider-arrows {
+    .slider-arrow {
+      background-color: $nestedCardBackgroundColor;
+      top: -10%;
+      opacity: 1;
+
+      svg {
+        fill: $whiteColor;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .slider-prev-arrow {
+      left: 86%;
+    }
   }
 }
 </style>

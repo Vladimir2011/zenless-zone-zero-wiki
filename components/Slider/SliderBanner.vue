@@ -52,8 +52,9 @@ const mainSliderOptions = {
 @use 'assets/scss/variables' as *;
 
 .main-banner-slider {
-  margin-bottom: 20px;
-  @include card;
+  margin-bottom: 30px;
+  border-radius: $borderRadiusCard;
+  background-color: $cardBackgroundColor;
 
   .banner-image {
     border-radius: $borderRadiusCard;
