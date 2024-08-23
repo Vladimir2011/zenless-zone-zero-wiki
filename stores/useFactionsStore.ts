@@ -441,7 +441,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         characters: useCharactersStore().getObolCharactersList,
         anotherFactions: [
           {
-            id: 6,
+            id: 1,
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
