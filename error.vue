@@ -13,6 +13,8 @@
 
 <script setup>
 const error = useError()
+
+const handleError = () => clearError({ redirect: '/' })
 </script>
 
 <style scoped lang="scss">

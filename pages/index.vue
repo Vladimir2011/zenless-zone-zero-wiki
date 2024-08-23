@@ -10,7 +10,7 @@
 
     <section class="section factions-section">
       <h2 class="section-title">Фракции</h2>
-      <SliderFactions />
+      <SliderFactions :factions-list="factionsList" />
     </section>
 
     <section class="section news-section">
@@ -20,7 +20,10 @@
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const factionsStore = useFactionsStore()
+const { factionsList } = storeToRefs(factionsStore)
+</script>
 
 <style scoped lang="scss">
 @use 'assets/scss/variables' as *;

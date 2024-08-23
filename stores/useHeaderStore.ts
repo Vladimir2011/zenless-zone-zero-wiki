@@ -16,7 +16,7 @@ export const useHeaderStore = defineStore('HeaderStore', {
       {
         id: 3,
         title: 'Фракции',
-        link: '/fractions'
+        link: '/factions'
       },
       {
         id: 4,

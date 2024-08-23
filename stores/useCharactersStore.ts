@@ -382,5 +382,28 @@ export const useCharactersStore = defineStore('CharactersStore', {
         )
       })
     }
+  },
+  getters: {
+    getBelobogCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'belobog')
+    },
+    getCalydonCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'calydon')
+    },
+    getCriminalCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'criminal')
+    },
+    getCunningHaresCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'cunning-hares')
+    },
+    getObolCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'obols-squad')
+    },
+    getSection6CharactersList() {
+      return this.charactersList.filter(character => character.faction === 'section6')
+    },
+    getVictoriaCharactersList() {
+      return this.charactersList.filter(character => character.faction === 'victoria')
+    }
   }
 })

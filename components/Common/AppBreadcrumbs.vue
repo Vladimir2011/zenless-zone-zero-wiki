@@ -47,6 +47,7 @@ const props = withDefaults(defineProps<BreadcrumbsProps>(), {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 0 20px 0;
+  gap: 10px 0;
   list-style: none;
   @media screen and (max-width: 768px) {
     margin: 0 0 15px 0;

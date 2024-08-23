@@ -9,6 +9,12 @@
 </template>
 
 <script setup lang="ts">
+const props = defineProps({
+  factionsList: {
+    type: {}
+  }
+})
+
 const sliderOptions = {
   type: 'loop',
   rewind: true,
@@ -44,9 +50,6 @@ const sliderOptions = {
     page: 'splide__pagination__page slider-pagination-item'
   }
 }
-const factionStore = useFactionsStore()
-
-const { factionsList } = storeToRefs(factionStore)
 </script>
 
 <style scoped lang="scss">
