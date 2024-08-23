@@ -66,7 +66,7 @@ const props = withDefaults(defineProps<BreadcrumbsProps>(), {
 
       padding: 8px;
       background-color: $nestedCardBackgroundColor;
-      border-radius: 8px;
+      border-radius: $borderRadiusDefault;
       @media (hover: hover) {
         &:hover {
           background-color: $greyColor;

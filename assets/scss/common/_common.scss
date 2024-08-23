@@ -48,9 +48,9 @@ pre {
 
 h1 {
   font-size: 30px;
-  line-height: 1.2;
+  line-height: 1.47;
   font-weight: 700;
-  margin: 0 0 15px 0;
+  margin: 0;
 
   @media screen and (max-width: 550px) {
     font-size: 24px;
@@ -77,6 +77,33 @@ h1 {
   @media screen and (max-width: 550px) {
     margin-top: 82px;
   }
+}
+
+// Базовые стили кнопки
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background-color: $nestedCardBackgroundColor;
+  border-radius: $borderRadiusDefault;
+  color: $whiteColor;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 600;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $greyColor;
+    }
+  }
+}
+
+.filters-reset-button {
+  padding: 15px;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 // Слайдер (стрелочки)
@@ -120,4 +147,40 @@ h1 {
   }
 }
 
+// Radio кнопки фильтров
 
+.filter {
+  .filter-button-item {
+    display: inline-block;
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: $nestedCardBackgroundColor;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      width: 50px;
+      height: 50px;
+
+      .filter-button-image {
+        width: 32px;
+        height: 32px;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $bodyBackgroundColor;
+        }
+      }
+    }
+
+    input[type='radio']:checked + label {
+      background-color: $greyColor;
+    }
+  }
+}
