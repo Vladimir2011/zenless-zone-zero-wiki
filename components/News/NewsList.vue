@@ -5,9 +5,11 @@
 </template>
 
 <script setup lang="ts">
-const newsStore = useNewsStore()
-
-const { newsList } = storeToRefs(newsStore)
+const props = defineProps({
+  newsList: {
+    type: {}
+  }
+})
 </script>
 
 <style scoped lang="scss">

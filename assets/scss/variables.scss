@@ -38,6 +38,18 @@ $borderRadiusDefault: 8px;
   }
 }
 
+@mixin main-page-card {
+  padding: 20px 20px 0 20px;
+  border-radius: $borderRadiusCard;
+  background-color: $cardBackgroundColor;
+
+  @media screen and (max-width: 768px) {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+}
+
 @mixin nested-card {
   border-radius: $borderRadiusCard;
   background-color: $nestedCardBackgroundColor;
