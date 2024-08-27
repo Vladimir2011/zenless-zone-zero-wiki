@@ -27,7 +27,11 @@
       </div>
 
       <div v-if="filteredCharactersList.length === 0" class="no-characters-found">
-        <nuxt-img src="/bangboos/bangboo-avocaboo.webp" alt="Ничего не найдено" class="no-characters-found-image" />
+        <nuxt-img
+          src="/bangboos/avocaboo/bangboo-avocaboo.webp"
+          alt="Ничего не найдено"
+          class="no-characters-found-image"
+        />
         <p class="no-characters-found-text">Ничего не найдено. Попробуйте изменить параметры поиска.</p>
       </div>
     </div>

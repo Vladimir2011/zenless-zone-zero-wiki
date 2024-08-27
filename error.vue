@@ -2,7 +2,7 @@
   <NuxtLayout v-if="error">
     <div class="error-container">
       <div v-if="error.statusCode === 404" class="error-block">
-        <nuxt-img src="/bangboos/bangboo-avocaboo.webp" alt="Ничего не найдено" />
+        <nuxt-img src="/bangboos/avocaboo/bangboo-avocaboo.webp" alt="Ничего не найдено" />
         <h1 class="error-code">404</h1>
         <h2 class="error-status">Oops! Страница, которую вы ищете, не найдена :(</h2>
         <nuxt-link to="/" class="button error-button"> Вернуться на главную </nuxt-link>
