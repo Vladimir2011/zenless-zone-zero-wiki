@@ -5,6 +5,7 @@
     <div class="news-info">
       <h3 class="news-title">{{ news.title }}</h3>
       <p class="news-date">{{ news.date }}</p>
+      <button class="button news-button">Читать далее</button>
     </div>
   </nuxt-link>
 </template>
@@ -28,6 +29,9 @@ const props = defineProps({
     &:hover {
       .news-info {
         background: $bodyBackgroundColor;
+        .news-button {
+          background-color: $greyColor;
+        }
       }
     }
   }
@@ -66,9 +70,20 @@ const props = defineProps({
       font-size: 16px;
       color: $greyColor;
       margin-top: auto;
+      margin-bottom: 5px;
 
       @media screen and (max-width: 550px) {
         font-size: 14px;
+      }
+    }
+  }
+
+  .button {
+    background-color: $bodyBackgroundColor;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $greyColor;
       }
     }
   }

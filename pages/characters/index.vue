@@ -15,7 +15,7 @@
       </div>
 
       <div v-if="isCharactersFilterOpen" :key="filtersKey" class="characters-filters-wrapper">
-        <FilterCharactersRarity @selectRarity="selectRarity" />
+        <FilterCharactersAndBangboosRarity @selectRarity="selectRarity" />
         <FilterAttributes @selectAttribute="selectAttribute" />
         <FilterSpecialties @selectSpecialty="selectSpecialty" />
         <FilterFactionsDropdown @selectFaction="selectFaction" />
