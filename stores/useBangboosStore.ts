@@ -174,7 +174,7 @@ const defaultBangboosList = [
     name: 'Резонабу',
     link: '/bangboos/resonaboo',
     icons: {
-      rarity: 'rarity-S.webp'
+      rarity: 'rarity-s.webp'
     },
     image: 'resonaboo/bangboo-resonaboo.webp',
     rarity: 'S'
