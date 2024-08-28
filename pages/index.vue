@@ -6,13 +6,13 @@
     <section class="section characters-section">
       <h2 class="section-title">Персонажи</h2>
       <SliderCharacters />
-      <nuxt-link to="/characters" class="main-page-button"> Открыть каталог персонажей </nuxt-link>
+      <nuxt-link to="/wiki/characters" class="main-page-button"> Открыть каталог персонажей </nuxt-link>
     </section>
 
     <section class="section factions-section">
       <h2 class="section-title">Фракции</h2>
       <SliderFactions :factions-list="factionsList" />
-      <nuxt-link to="/factions" class="main-page-button"> Посмотреть все фракции </nuxt-link>
+      <nuxt-link to="/wiki/factions" class="main-page-button"> Посмотреть все фракции </nuxt-link>
     </section>
 
     <section class="section news-section">
