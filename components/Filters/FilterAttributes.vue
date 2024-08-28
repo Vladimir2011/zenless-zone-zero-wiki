@@ -1,6 +1,11 @@
 <template>
   <div class="attribute-characters-filter filter">
-    <div v-for="attribute in ATTRIBUTES_FILTERS" :key="attribute.id" class="attribute-item filter-button-item">
+    <div
+      v-for="attribute in ATTRIBUTES_FILTERS"
+      :key="attribute.id"
+      class="attribute-item filter-button-item"
+      :data-tooltip="attribute.tooltip"
+    >
       <input type="radio" name="attribute" class="attribute-input" :id="attribute.name" :value="attribute.name" />
       <label :for="attribute.name" @click="$emit('selectAttribute', attribute)">
         <nuxt-img

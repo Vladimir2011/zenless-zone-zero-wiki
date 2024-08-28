@@ -6,32 +6,51 @@ export const useHeaderStore = defineStore('HeaderStore', {
       {
         id: 1,
         title: 'Главная',
-        link: '/'
+        link: '/',
+        childrenMenu: []
       },
       {
         id: 2,
-        title: 'Персонажи',
-        link: '/characters'
+        title: 'Новости',
+        link: '/news',
+        childrenMenu: []
       },
       {
         id: 3,
-        title: 'Фракции',
-        link: '/factions'
-      },
-      {
-        id: 4,
-        title: 'Амплификаторы',
-        link: '/wengines'
-      },
-      {
-        id: 5,
-        title: 'Банбу',
-        link: '/bangboos'
-      },
-      {
-        id: 6,
-        title: 'Новости',
-        link: '/news'
+        title: 'База знаний',
+        link: '/wiki',
+        childrenMenu: [
+          {
+            id: 1,
+            title: 'Персонажи',
+            image: 'character-wiki.webp',
+            link: '/wiki/characters'
+          },
+          {
+            id: 2,
+            title: 'Фракции',
+            image: 'faction-wiki.webp',
+            link: '/wiki/factions'
+          },
+          {
+            id: 3,
+            image: 'wengine-wiki.webp',
+            title: 'Амплификаторы',
+            link: '/wiki/wengines'
+          },
+          {
+            id: 4,
+            image: 'bangboo-wiki.webp',
+            title: 'Банбу',
+            link: '/wiki/bangboos'
+          },
+          {
+            id: 5,
+            image: 'drive-disks-wiki.webp',
+            title: 'Драйв диски',
+            link: '/wiki/disk-drives'
+          }
+        ]
       }
     ],
     isMobileMenuOpen: false
@@ -42,6 +61,12 @@ export const useHeaderStore = defineStore('HeaderStore', {
     },
     closeMobileMenu() {
       this.isMobileMenuOpen = false
+    }
+  },
+  getters: {
+    getWikiChildMenuList() {
+      const wikiMenu = this.menu.filter(menu => menu.link === '/wiki')
+      return wikiMenu[0].childrenMenu
     }
   }
 })

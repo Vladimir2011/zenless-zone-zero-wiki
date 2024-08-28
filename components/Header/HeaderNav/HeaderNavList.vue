@@ -16,12 +16,17 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    width: 100%;
     @media screen and (max-width: 1200px) {
       flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0;
     }
   }
 
   @media screen and (max-width: 1200px) {
+    width: 100%;
     flex: 0;
   }
 }

@@ -51,31 +51,36 @@ export const useConstants = () => {
       id: 1,
       name: 'electric',
       image: 'electric-attribute.webp',
-      alt: 'electric-attribute'
+      alt: 'electric-attribute',
+      tooltip: 'Электро'
     },
     {
       id: 2,
       name: 'ether',
       image: 'ether-attribute.webp',
-      alt: 'ether-attribute'
+      alt: 'ether-attribute',
+      tooltip: 'Эфир'
     },
     {
       id: 3,
       name: 'fire',
       image: 'fire-attribute.webp',
-      alt: 'fire-attribute'
+      alt: 'fire-attribute',
+      tooltip: 'Огонь'
     },
     {
       id: 4,
       name: 'ice',
       image: 'ice-attribute.webp',
-      alt: 'ice-attribute'
+      alt: 'ice-attribute',
+      tooltip: 'Лёд'
     },
     {
       id: 5,
       name: 'physical',
       image: 'physical-attribute.webp',
-      alt: 'physical-attribute'
+      alt: 'physical-attribute',
+      tooltip: 'Физический'
     }
   ]
 
@@ -84,31 +89,36 @@ export const useConstants = () => {
       id: 1,
       name: 'anomaly',
       image: 'anomaly-specialty.webp',
-      alt: 'anomaly-specialty'
+      alt: 'anomaly-specialty',
+      tooltip: 'Аномалия'
     },
     {
       id: 2,
       name: 'attack',
       image: 'attack-specialty.webp',
-      alt: 'attack-specialty'
+      alt: 'attack-specialty',
+      tooltip: 'Нападение'
     },
     {
       id: 3,
       name: 'defense',
       image: 'defense-specialty.webp',
-      alt: 'defense-specialty'
+      alt: 'defense-specialty',
+      tooltip: 'Оборона'
     },
     {
       id: 4,
       name: 'stun',
       image: 'stun-specialty.webp',
-      alt: 'stun-specialty'
+      alt: 'stun-specialty',
+      tooltip: 'Устрашение'
     },
     {
       id: 5,
       name: 'support',
       image: 'support-specialty.webp',
-      alt: 'support-specialty'
+      alt: 'support-specialty',
+      tooltip: 'Поддержка'
     }
   ]
 

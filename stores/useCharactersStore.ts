@@ -4,7 +4,7 @@ const defaultCharactersList = [
   {
     id: 1,
     name: 'Цинъи',
-    link: '/characters/qingyi',
+    link: '/wiki/characters/qingyi',
     image: 'qingyi/qingyi-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -20,7 +20,7 @@ const defaultCharactersList = [
   {
     id: 2,
     name: 'Чжу Юань',
-    link: '/characters/zhuyuan',
+    link: '/wiki/characters/zhuyuan',
     image: 'zhu-yuan/zhu-yuan-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -36,7 +36,7 @@ const defaultCharactersList = [
   {
     id: 3,
     name: 'Эллен',
-    link: '/characters/ellen',
+    link: '/wiki/characters/ellen',
     image: 'ellen/ellen-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -52,7 +52,7 @@ const defaultCharactersList = [
   {
     id: 4,
     name: 'Ликаон',
-    link: '/characters/lycaon',
+    link: '/wiki/characters/lycaon',
     image: 'lycaon/lycaon-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -68,7 +68,7 @@ const defaultCharactersList = [
   {
     id: 5,
     name: 'Джейн Доу',
-    link: '/characters/janedoe',
+    link: '/wiki/characters/janedoe',
     image: 'jane-doe/jane-doe-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -84,7 +84,7 @@ const defaultCharactersList = [
   {
     id: 6,
     name: 'Энби',
-    link: '/characters/anby',
+    link: '/wiki/characters/anby',
     image: 'anby/anby-doe-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -100,7 +100,7 @@ const defaultCharactersList = [
   {
     id: 7,
     name: 'Корин',
-    link: '/characters/corin',
+    link: '/wiki/characters/corin',
     image: 'corin/corin-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -116,7 +116,7 @@ const defaultCharactersList = [
   {
     id: 8,
     name: 'Сет',
-    link: '/characters/seth',
+    link: '/wiki/characters/seth',
     image: 'seth/seth-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -132,7 +132,7 @@ const defaultCharactersList = [
   {
     id: 9,
     name: 'Нэкомата',
-    link: '/characters/nekomata',
+    link: '/wiki/characters/nekomata',
     image: 'nekomata/nekomata-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -148,7 +148,7 @@ const defaultCharactersList = [
   {
     id: 10,
     name: 'Антон',
-    link: '/characters/anton',
+    link: '/wiki/characters/anton',
     image: 'anton/anton-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -164,7 +164,7 @@ const defaultCharactersList = [
   {
     id: 11,
     name: 'Солдат 11',
-    link: '/characters/soldier11',
+    link: '/wiki/characters/soldier11',
     image: 'soldier11/soldier11-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -180,7 +180,7 @@ const defaultCharactersList = [
   {
     id: 12,
     name: 'Бен',
-    link: '/characters/ben',
+    link: '/wiki/characters/ben',
     image: 'ben/ben-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -196,7 +196,7 @@ const defaultCharactersList = [
   {
     id: 13,
     name: 'Грейс',
-    link: '/characters/grace',
+    link: '/wiki/characters/grace',
     image: 'grace/grace-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -212,7 +212,7 @@ const defaultCharactersList = [
   {
     id: 14,
     name: 'Николь',
-    link: '/characters/nicole',
+    link: '/wiki/characters/nicole',
     image: 'nicole/nicole-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -228,7 +228,7 @@ const defaultCharactersList = [
   {
     id: 15,
     name: 'Сокаку',
-    link: '/characters/soukaku',
+    link: '/wiki/characters/soukaku',
     image: 'soukaku/soukaku-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -244,7 +244,7 @@ const defaultCharactersList = [
   {
     id: 16,
     name: 'Билли',
-    link: '/characters/billy',
+    link: '/wiki/characters/billy',
     image: 'billy/billy-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -260,7 +260,7 @@ const defaultCharactersList = [
   {
     id: 17,
     name: 'Пайпер',
-    link: '/characters/piper',
+    link: '/wiki/characters/piper',
     image: 'piper/piper-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -276,7 +276,7 @@ const defaultCharactersList = [
   {
     id: 18,
     name: 'Коляда',
-    link: '/characters/koleda',
+    link: '/wiki/characters/koleda',
     image: 'koleda/koleda-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -292,7 +292,7 @@ const defaultCharactersList = [
   {
     id: 19,
     name: 'Люси',
-    link: '/characters/lucy',
+    link: '/wiki/characters/lucy',
     image: 'lucy/lucy-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
@@ -308,7 +308,7 @@ const defaultCharactersList = [
   {
     id: 20,
     name: 'Рина',
-    link: '/characters/rina',
+    link: '/wiki/characters/rina',
     image: 'rina/rina-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
@@ -333,8 +333,12 @@ export const useCharactersStore = defineStore('CharactersStore', {
         link: '/'
       },
       {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
         name: 'Персонажи',
-        link: '/characters'
+        link: '/wiki/characters'
       }
     ],
     selectedFaction: 'Выберите фракцию',

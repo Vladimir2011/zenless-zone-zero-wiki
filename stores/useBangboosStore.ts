@@ -2,7 +2,7 @@ const defaultBangboosList = [
   {
     id: 1,
     name: 'Амиллион',
-    link: '/bangboos/amillion',
+    link: '/wiki/bangboos/amillion',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -12,7 +12,7 @@ const defaultBangboosList = [
   {
     id: 2,
     name: 'Авокабу',
-    link: '/bangboos/avocaboo',
+    link: '/wiki/bangboos/avocaboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -22,7 +22,7 @@ const defaultBangboosList = [
   {
     id: 3,
     name: 'Пакетник',
-    link: '/bangboos/bagboo',
+    link: '/wiki/bangboos/bagboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -32,7 +32,7 @@ const defaultBangboosList = [
   {
     id: 4,
     name: 'Револьвербу',
-    link: '/bangboos/bangvolver',
+    link: '/wiki/bangboos/bangvolver',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -42,7 +42,7 @@ const defaultBangboosList = [
   {
     id: 5,
     name: 'Яблочкобу',
-    link: '/bangboos/boollseye',
+    link: '/wiki/bangboos/boollseye',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -52,7 +52,7 @@ const defaultBangboosList = [
   {
     id: 6,
     name: 'Баробу',
-    link: '/bangboos/booressure',
+    link: '/wiki/bangboos/booressure',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -62,7 +62,7 @@ const defaultBangboosList = [
   {
     id: 7,
     name: 'Мажордом',
-    link: '/bangboos/butler',
+    link: '/wiki/bangboos/butler',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -72,7 +72,7 @@ const defaultBangboosList = [
   {
     id: 8,
     name: 'Плаксабу',
-    link: '/bangboos/cryboo',
+    link: '/wiki/bangboos/cryboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -82,7 +82,7 @@ const defaultBangboosList = [
   {
     id: 9,
     name: 'Вельзебу',
-    link: '/bangboos/devilboo',
+    link: '/wiki/bangboos/devilboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -92,7 +92,7 @@ const defaultBangboosList = [
   {
     id: 10,
     name: 'Электробу',
-    link: '/bangboos/electroboo',
+    link: '/wiki/bangboos/electroboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -102,7 +102,7 @@ const defaultBangboosList = [
   {
     id: 11,
     name: 'Искатель',
-    link: '/bangboos/exploreboo',
+    link: '/wiki/bangboos/exploreboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -112,7 +112,7 @@ const defaultBangboosList = [
   {
     id: 12,
     name: 'Счастливчик',
-    link: '/bangboos/luckyboo',
+    link: '/wiki/bangboos/luckyboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -122,7 +122,7 @@ const defaultBangboosList = [
   {
     id: 13,
     name: 'Магнитобу',
-    link: '/bangboos/magnetiboo',
+    link: '/wiki/bangboos/magnetiboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -132,7 +132,7 @@ const defaultBangboosList = [
   {
     id: 14,
     name: 'Офицер Цуй',
-    link: '/bangboos/officer-cui',
+    link: '/wiki/bangboos/officer-cui',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -142,7 +142,7 @@ const defaultBangboosList = [
   {
     id: 15,
     name: 'Бумабу',
-    link: '/bangboos/paperboo',
+    link: '/wiki/bangboos/paperboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -152,7 +152,7 @@ const defaultBangboosList = [
   {
     id: 16,
     name: 'Пингвибу',
-    link: '/bangboos/penguinboo',
+    link: '/wiki/bangboos/penguinboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -162,7 +162,7 @@ const defaultBangboosList = [
   {
     id: 17,
     name: 'Штекербу',
-    link: '/bangboos/plugboo',
+    link: '/wiki/bangboos/plugboo',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -172,7 +172,7 @@ const defaultBangboosList = [
   {
     id: 18,
     name: 'Резонабу',
-    link: '/bangboos/resonaboo',
+    link: '/wiki/bangboos/resonaboo',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -182,7 +182,7 @@ const defaultBangboosList = [
   {
     id: 19,
     name: 'Ракетабу',
-    link: '/bangboos/rocketboo',
+    link: '/wiki/bangboos/rocketboo',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -192,7 +192,7 @@ const defaultBangboosList = [
   {
     id: 20,
     name: 'Прорабу',
-    link: '/bangboos/safety',
+    link: '/wiki/bangboos/safety',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -202,7 +202,7 @@ const defaultBangboosList = [
   {
     id: 21,
     name: 'Акулабу',
-    link: '/bangboos/sharkboo',
+    link: '/wiki/bangboos/sharkboo',
     icons: {
       rarity: 'rarity-s.webp'
     },
@@ -212,7 +212,7 @@ const defaultBangboosList = [
   {
     id: 22,
     name: 'Сумобу',
-    link: '/bangboos/sumoboo',
+    link: '/wiki/bangboos/sumoboo',
     icons: {
       rarity: 'rarity-a.webp'
     },
@@ -231,8 +231,12 @@ export const useBangboosStore = defineStore('BangboosStore', {
         link: '/'
       },
       {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
         name: 'Банбу',
-        link: '/bangboos'
+        link: '/wiki/bangboos'
       }
     ],
     filterParams: {

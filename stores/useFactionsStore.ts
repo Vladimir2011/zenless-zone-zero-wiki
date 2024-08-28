@@ -9,7 +9,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Комбинат Белобог',
         filterName: 'belobog',
         description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-        link: '/factions/belobog',
+        link: '/wiki/factions/belobog',
         image: 'belobog-faction.png'
       },
       {
@@ -17,7 +17,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Сыны Калидона',
         filterName: 'calydon',
         description: 'Приду, увижу, снесу!',
-        link: '/factions/calydon',
+        link: '/wiki/factions/calydon',
         image: 'calydon-faction.webp'
       },
       {
@@ -25,7 +25,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Особая группа отдела угрозыска',
         filterName: 'criminal',
         description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-        link: '/factions/criminal',
+        link: '/wiki/factions/criminal',
         image: 'criminal-faction.webp'
       },
       {
@@ -33,14 +33,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Хитрые зайцы',
         filterName: 'cunning-hares',
         description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-        link: '/factions/cunning-hares',
+        link: '/wiki/factions/cunning-hares',
         image: 'cunning-hares-faction.png'
       },
       {
         id: 5,
         name: 'Отряд ОБОЛ',
         filterName: 'obols-squad',
-        link: '/factions/obol',
+        link: '/wiki/factions/obol',
         description: 'Безопасность граждан превыше всего!',
         image: 'obols-squad-faction.webp'
       },
@@ -49,7 +49,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Секция 6',
         filterName: 'section6',
         description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-        link: '/factions/section6',
+        link: '/wiki/factions/section6',
         image: 'section6-faction.png'
       },
       {
@@ -57,7 +57,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
         name: 'Агенство домашнего персонала "Виктория"',
         filterName: 'victoria',
         description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-        link: '/factions/victoria',
+        link: '/wiki/factions/victoria',
         image: 'victoria-faction.png'
       }
     ],
@@ -67,8 +67,12 @@ export const useFactionsStore = defineStore('FactionsStore', {
         link: '/'
       },
       {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
         name: 'Фракции',
-        link: '/factions'
+        link: '/wiki/factions'
       }
     ],
     factionListForPages: [
@@ -86,7 +90,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Комбинат Белобог',
-            link: '/factions/belobog'
+            link: '/wiki/factions/belobog'
           }
         ],
         title: 'Комбинат "Белобог"',
@@ -117,7 +121,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
@@ -125,7 +129,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
@@ -133,14 +137,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
             id: 4,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -149,7 +153,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           },
           {
@@ -157,7 +161,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           }
         ]
@@ -176,7 +180,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Сыны Калидона',
-            link: '/factions/calydon'
+            link: '/wiki/factions/calydon'
           }
         ],
         title: 'Сыны Калидона',
@@ -200,7 +204,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -208,7 +212,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
@@ -216,14 +220,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
             id: 4,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -232,7 +236,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           },
           {
@@ -240,7 +244,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           }
         ]
@@ -259,7 +263,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Особая группа отдела угрозыска',
-            link: '/factions/criminal'
+            link: '/wiki/factions/criminal'
           }
         ],
         title: 'Особая группа отдела угрозыска',
@@ -279,7 +283,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
@@ -287,7 +291,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -295,14 +299,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
             id: 4,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -311,7 +315,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           },
           {
@@ -319,7 +323,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           }
         ]
@@ -338,7 +342,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Хитрые зайцы',
-            link: '/factions/cunning-hares'
+            link: '/wiki/factions/cunning-hares'
           }
         ],
         title: 'Хитрые зайцы',
@@ -366,7 +370,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           },
           {
@@ -374,7 +378,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -382,7 +386,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
@@ -390,14 +394,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
             id: 5,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -406,7 +410,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           }
         ]
@@ -425,7 +429,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Отряд ОБОЛ',
-            link: '/factions/obol'
+            link: '/wiki/factions/obol'
           }
         ],
         title: 'Отряд ОБОЛ',
@@ -445,7 +449,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           },
           {
@@ -453,7 +457,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -461,7 +465,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
@@ -469,7 +473,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
@@ -477,7 +481,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
@@ -485,7 +489,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           }
         ]
@@ -504,7 +508,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Секция 6',
-            link: '/factions/section6'
+            link: '/wiki/factions/section6'
           }
         ],
         title: 'Секция 6',
@@ -523,7 +527,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             id: 1,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -532,7 +536,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -540,7 +544,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
@@ -548,7 +552,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
@@ -556,7 +560,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
@@ -564,7 +568,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Агенство домашнего персонала "Виктория"',
             filterName: 'victoria',
             description: 'Благодарим за обращение в Агентство «Виктория»! Желание клиента для нас закон.',
-            link: '/factions/victoria',
+            link: '/wiki/factions/victoria',
             image: 'victoria-faction.png'
           }
         ]
@@ -583,7 +587,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Агенство домашнего персонала "Виктория"',
-            link: '/factions/victoria'
+            link: '/wiki/factions/victoria'
           }
         ],
         title: 'Агенство домашнего персонала "Виктория"',
@@ -603,7 +607,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Особая группа отдела угрозыска',
             filterName: 'criminal',
             description: 'Если у вас возникли проблемы, обращайтесь в Службу общественной безопасности Нью-Эриду.',
-            link: '/factions/criminal',
+            link: '/wiki/factions/criminal',
             image: 'criminal-faction.webp'
           },
           {
@@ -611,7 +615,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Комбинат Белобог',
             filterName: 'belobog',
             description: 'Каждая наша постройка — не просто здание, а настоящий уютный дом.',
-            link: '/factions/belobog',
+            link: '/wiki/factions/belobog',
             image: 'belobog-faction.png'
           },
           {
@@ -619,7 +623,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Сыны Калидона',
             filterName: 'calydon',
             description: 'Приду, увижу, снесу!',
-            link: '/factions/calydon',
+            link: '/wiki/factions/calydon',
             image: 'calydon-faction.webp'
           },
           {
@@ -627,14 +631,14 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Хитрые зайцы',
             filterName: 'cunning-hares',
             description: 'Всегда к вашим услугам, пока вы готовы выложить кругленькую сумму!',
-            link: '/factions/cunning-hares',
+            link: '/wiki/factions/cunning-hares',
             image: 'cunning-hares-faction.png'
           },
           {
             id: 5,
             name: 'Отряд ОБОЛ',
             filterName: 'obols-squad',
-            link: '/factions/obol',
+            link: '/wiki/factions/obol',
             description: 'Безопасность граждан превыше всего!',
             image: 'obols-squad-faction.webp'
           },
@@ -643,7 +647,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
             name: 'Секция 6',
             filterName: 'section6',
             description: 'Зло должно быть уничтожено — а что такое «зло», решать нам.',
-            link: '/factions/section6',
+            link: '/wiki/factions/section6',
             image: 'section6-faction.png'
           }
         ]

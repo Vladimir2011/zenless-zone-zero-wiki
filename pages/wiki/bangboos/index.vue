@@ -1,6 +1,19 @@
 <template>
   <div class="container">
     <AppBreadcrumbs :breadcrumbs="bangboosPageBreadcrumbs" />
+    <div class="description-wrapper">
+      <p class="description-text">
+        В захватывающем мире Zenless Zone Zero, где опасность таится за каждым углом, вы не сможете справиться в
+        одиночку.
+      </p>
+
+      <p class="description-text">
+        Именно здесь на сцену выходят <b>Банбу</b> – ваши верные компаньоны, которые станут незаменимыми союзниками в
+        бою. <b>Банбу</b> – это не просто милые зверушки, это настоящие бойцы, обладающие уникальными способностями и
+        стилями боя.
+      </p>
+    </div>
+
     <div class="bangboos-wrapper">
       <div class="bangboos-header-wrapper">
         <h1 class="bangboos-wrapper-title">Каталог банбу</h1>
@@ -61,6 +74,22 @@ const resetFilters = () => {
 
 <style scoped lang="scss">
 @use 'assets/scss/variables' as *;
+
+.description-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  @include card;
+  .description-text {
+    font-size: 20px;
+    font-weight: 500;
+
+    @media screen and (max-width: 550px) {
+      font-size: 16px;
+    }
+  }
+}
 
 .bangboos-wrapper {
   margin-bottom: 20px;
