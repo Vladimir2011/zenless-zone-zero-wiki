@@ -46,6 +46,27 @@ export const useConstants = () => {
     }
   ]
 
+  const RARITY_WENGINES_FILTERS = [
+    {
+      id: 1,
+      name: 'B',
+      image: 'rarity-b.webp',
+      alt: 'rarity-b'
+    },
+    {
+      id: 2,
+      name: 'A',
+      image: 'rarity-a.webp',
+      alt: 'rarity-a'
+    },
+    {
+      id: 3,
+      name: 'S',
+      image: 'rarity-s.webp',
+      alt: 'rarity-s'
+    }
+  ]
+
   const ATTRIBUTES_FILTERS = [
     {
       id: 1,
@@ -126,6 +147,7 @@ export const useConstants = () => {
     SOCIAL_LINKS,
     RARITY_CHARACTER_FILTERS,
     ATTRIBUTES_FILTERS,
-    SPECIALTIES_FILTERS
+    SPECIALTIES_FILTERS,
+    RARITY_WENGINES_FILTERS
   }
 }

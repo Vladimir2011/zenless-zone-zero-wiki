@@ -99,4 +99,12 @@ const props = defineProps({
     }
   }
 }
+
+.character-s {
+  background-color: #fe8a00;
+}
+
+.character-a {
+  background-color: #8d79e3;
+}
 </style>
