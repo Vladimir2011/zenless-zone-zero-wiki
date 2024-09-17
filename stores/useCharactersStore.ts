@@ -6,6 +6,7 @@ const defaultCharactersList = [
     name: 'Цинъи',
     link: '/wiki/characters/qingyi',
     image: 'qingyi/qingyi-card-image.webp',
+    smallImage: 'qingyi/qingyi-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'electric-attribute.webp',
@@ -22,6 +23,7 @@ const defaultCharactersList = [
     name: 'Чжу Юань',
     link: '/wiki/characters/zhuyuan',
     image: 'zhu-yuan/zhu-yuan-card-image.webp',
+    smallImage: 'zhu-yuan/zhu-yuan-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'ether-attribute.webp',
@@ -38,6 +40,7 @@ const defaultCharactersList = [
     name: 'Эллен',
     link: '/wiki/characters/ellen',
     image: 'ellen/ellen-card-image.webp',
+    smallImage: 'ellen/ellen-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'ice-attribute.webp',
@@ -54,6 +57,7 @@ const defaultCharactersList = [
     name: 'Ликаон',
     link: '/wiki/characters/lycaon',
     image: 'lycaon/lycaon-card-image.webp',
+    smallImage: 'lycaon/lycaon-small-card-image.png',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'ice-attribute.webp',
@@ -70,6 +74,7 @@ const defaultCharactersList = [
     name: 'Джейн Доу',
     link: '/wiki/characters/janedoe',
     image: 'jane-doe/jane-doe-card-image.webp',
+    smallImage: 'jane-doe/jane-doe-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'physical-attribute.webp',
@@ -85,7 +90,8 @@ const defaultCharactersList = [
     id: 6,
     name: 'Энби',
     link: '/wiki/characters/anby',
-    image: 'anby/anby-doe-card-image.webp',
+    image: 'anby/anby-card-image.webp',
+    smallImage: 'anby/anby-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'electric-attribute.webp',
@@ -102,6 +108,7 @@ const defaultCharactersList = [
     name: 'Корин',
     link: '/wiki/characters/corin',
     image: 'corin/corin-card-image.webp',
+    smallImage: 'corin/corin-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'physical-attribute.webp',
@@ -118,6 +125,7 @@ const defaultCharactersList = [
     name: 'Сет',
     link: '/wiki/characters/seth',
     image: 'seth/seth-card-image.webp',
+    smallImage: 'seth/seth-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'electric-attribute.webp',
@@ -134,6 +142,7 @@ const defaultCharactersList = [
     name: 'Нэкомата',
     link: '/wiki/characters/nekomata',
     image: 'nekomata/nekomata-card-image.webp',
+    smallImage: 'nekomata/nekomata-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'physical-attribute.webp',
@@ -150,6 +159,7 @@ const defaultCharactersList = [
     name: 'Антон',
     link: '/wiki/characters/anton',
     image: 'anton/anton-card-image.webp',
+    smallImage: 'anton/anton-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'electric-attribute.webp',
@@ -166,6 +176,7 @@ const defaultCharactersList = [
     name: 'Солдат 11',
     link: '/wiki/characters/soldier11',
     image: 'soldier11/soldier11-card-image.webp',
+    smallImage: 'soldier11/soldier11-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'fire-attribute.webp',
@@ -182,6 +193,7 @@ const defaultCharactersList = [
     name: 'Бен',
     link: '/wiki/characters/ben',
     image: 'ben/ben-card-image.webp',
+    smallImage: 'ben/ben-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'fire-attribute.webp',
@@ -198,6 +210,7 @@ const defaultCharactersList = [
     name: 'Грейс',
     link: '/wiki/characters/grace',
     image: 'grace/grace-card-image.webp',
+    smallImage: 'grace/grace-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'electric-attribute.webp',
@@ -214,6 +227,7 @@ const defaultCharactersList = [
     name: 'Николь',
     link: '/wiki/characters/nicole',
     image: 'nicole/nicole-card-image.webp',
+    smallImage: 'nicole/nicole-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'ether-attribute.webp',
@@ -230,6 +244,7 @@ const defaultCharactersList = [
     name: 'Сокаку',
     link: '/wiki/characters/soukaku',
     image: 'soukaku/soukaku-card-image.webp',
+    smallImage: 'soukaku/soukaku-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'ice-attribute.webp',
@@ -246,6 +261,7 @@ const defaultCharactersList = [
     name: 'Билли',
     link: '/wiki/characters/billy',
     image: 'billy/billy-card-image.webp',
+    smallImage: 'billy/billy-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'physical-attribute.webp',
@@ -262,6 +278,7 @@ const defaultCharactersList = [
     name: 'Пайпер',
     link: '/wiki/characters/piper',
     image: 'piper/piper-card-image.webp',
+    smallImage: 'piper/piper-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'physical-attribute.webp',
@@ -278,6 +295,7 @@ const defaultCharactersList = [
     name: 'Коляда',
     link: '/wiki/characters/koleda',
     image: 'koleda/koleda-card-image.webp',
+    smallImage: 'koleda/koleda-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'fire-attribute.webp',
@@ -294,6 +312,7 @@ const defaultCharactersList = [
     name: 'Люси',
     link: '/wiki/characters/lucy',
     image: 'lucy/lucy-card-image.webp',
+    smallImage: 'lucy/lucy-small-card-image.webp',
     icons: {
       rarity: 'rarity-a.webp',
       attribute: 'fire-attribute.webp',
@@ -310,6 +329,7 @@ const defaultCharactersList = [
     name: 'Рина',
     link: '/wiki/characters/rina',
     image: 'rina/rina-card-image.webp',
+    smallImage: 'rina/rina-small-card-image.webp',
     icons: {
       rarity: 'rarity-s.webp',
       attribute: 'electric-attribute.webp',
@@ -408,6 +428,111 @@ export const useCharactersStore = defineStore('CharactersStore', {
     },
     getVictoriaCharactersList() {
       return this.charactersList.filter(character => character.faction === 'victoria')
+    },
+    getAllAttackCharactersForSmallCardList() {
+      const result = []
+
+      for (let i = 0; i < this.filteredCharactersList.length; i++) {
+        if (this.filteredCharactersList[i].specialty === 'attack') {
+          result.push({
+            id: this.filteredCharactersList[i].id,
+            name: this.filteredCharactersList[i].name,
+            link: this.filteredCharactersList[i].link,
+            image: this.filteredCharactersList[i].smallImage,
+            icons: {
+              attribute: this.filteredCharactersList[i].icons.attribute,
+              specialty: this.filteredCharactersList[i].icons.specialty
+            },
+            rarity: this.filteredCharactersList[i].rarity
+          })
+        }
+      }
+
+      return result
+    },
+    getAllDefenseCharactersForSmallCardList() {
+      const result = []
+
+      for (let i = 0; i < this.filteredCharactersList.length; i++) {
+        if (this.filteredCharactersList[i].specialty === 'defense') {
+          result.push({
+            id: this.filteredCharactersList[i].id,
+            name: this.filteredCharactersList[i].name,
+            link: this.filteredCharactersList[i].link,
+            image: this.filteredCharactersList[i].smallImage,
+            icons: {
+              attribute: this.filteredCharactersList[i].icons.attribute,
+              specialty: this.filteredCharactersList[i].icons.specialty
+            },
+            rarity: this.filteredCharactersList[i].rarity
+          })
+        }
+      }
+
+      return result
+    },
+    getAllAnomalyCharactersForSmallCardList() {
+      const result = []
+
+      for (let i = 0; i < this.filteredCharactersList.length; i++) {
+        if (this.filteredCharactersList[i].specialty === 'anomaly') {
+          result.push({
+            id: this.filteredCharactersList[i].id,
+            name: this.filteredCharactersList[i].name,
+            link: this.filteredCharactersList[i].link,
+            image: this.filteredCharactersList[i].smallImage,
+            icons: {
+              attribute: this.filteredCharactersList[i].icons.attribute,
+              specialty: this.filteredCharactersList[i].icons.specialty
+            },
+            rarity: this.filteredCharactersList[i].rarity
+          })
+        }
+      }
+
+      return result
+    },
+    getAllSupportCharactersForSmallCardList() {
+      const result = []
+
+      for (let i = 0; i < this.filteredCharactersList.length; i++) {
+        if (this.filteredCharactersList[i].specialty === 'support') {
+          result.push({
+            id: this.filteredCharactersList[i].id,
+            name: this.filteredCharactersList[i].name,
+            link: this.filteredCharactersList[i].link,
+            image: this.filteredCharactersList[i].smallImage,
+            icons: {
+              attribute: this.filteredCharactersList[i].icons.attribute,
+              specialty: this.filteredCharactersList[i].icons.specialty
+            },
+            rarity: this.filteredCharactersList[i].rarity
+          })
+        }
+      }
+
+      return result
+    },
+    getAllStunCharactersForSmallCardList() {
+      const result = []
+
+      for (let i = 0; i < this.filteredCharactersList.length; i++) {
+        if (this.filteredCharactersList[i].specialty === 'stun') {
+          result.push({
+            id: this.filteredCharactersList[i].id,
+            name: this.filteredCharactersList[i].name,
+            link: this.filteredCharactersList[i].link,
+            image: this.filteredCharactersList[i].smallImage,
+            icons: {
+              attribute: this.filteredCharactersList[i].icons.attribute,
+              specialty: this.filteredCharactersList[i].icons.specialty
+            },
+            rarity: this.filteredCharactersList[i].rarity
+          })
+        }
+      }
+
+      return result
     }
   }
 })

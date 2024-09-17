@@ -22,6 +22,12 @@
             Специальность:
             <nuxt-img :src="`/specialties/${wEngine.icons.specialty}`" alt="specialty-icon" class="specialty-image" />
           </p>
+          <p v-if="wEngine.signature" class="wengine-main-info-text wengine-character-signature">
+            Сигна:
+            <nuxt-link :to="wEngine.signature.link" class="wengine-character-link">{{
+              wEngine.signature.name
+            }}</nuxt-link>
+          </p>
         </div>
         <div class="wengine-stats-block">
           <p class="wengine-stats-text">
@@ -85,14 +91,14 @@ const props = defineProps({
       object-fit: contain;
       border-radius: $borderRadiusCard;
 
-      width: 160px;
-      height: 160px;
-      flex: 0 0 160px;
+      width: 200px;
+      height: 200px;
+      flex: 0 0 200px;
 
       @media screen and (max-width: 550px) {
-        width: 100px;
-        height: auto;
-        flex: 0 0 100px;
+        width: 130px;
+        height: 100%;
+        flex: 0 0 130px;
       }
 
       @media screen and (max-width: 375px) {
@@ -152,6 +158,15 @@ const props = defineProps({
           img {
             width: 24px;
             height: 24px;
+          }
+        }
+
+        .wengine-character-signature {
+          font-weight: 500;
+          .wengine-character-link {
+            color: #3ba5ff;
+            font-weight: 700;
+            text-decoration: underline;
           }
         }
       }

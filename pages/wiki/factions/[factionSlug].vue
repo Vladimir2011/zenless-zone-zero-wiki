@@ -46,8 +46,6 @@ const currentFactionPage = ref({})
 
 currentFactionPage.value = factionStore.getFactionByRouteSlug(route.params.factionSlug)
 
-console.log(currentFactionPage.value)
-
 if (!currentFactionPage.value) {
   throw showError({ statusCode: 404, message: 'Фракция не найдена', fatal: true })
 }
