@@ -97,7 +97,7 @@ const props = defineProps({
 
       @media screen and (max-width: 550px) {
         width: 130px;
-        height: 100%;
+        height: auto;
         flex: 0 0 130px;
       }
 
