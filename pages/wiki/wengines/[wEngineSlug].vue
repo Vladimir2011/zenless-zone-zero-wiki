@@ -22,6 +22,13 @@
         />
       </div>
     </div>
+
+    <div class="wengine-description-wrapper">
+      <h2>Смотрите также</h2>
+      <div class="wengine-grid">
+        <WEngineCard v-for="wEngine in getWEngineReadMoreArray" :key="wEngine.id" :wEngine="wEngine" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -29,9 +36,14 @@
 const wEngineStore = useWEnginesStore()
 const route = useRoute()
 
+const { getWEngineReadMoreArray } = storeToRefs(wEngineStore)
 const currentWEnginePage = ref({})
 
 currentWEnginePage.value = wEngineStore.getWEngineByRouteSlug(route.params.wEngineSlug)
+
+onMounted(() => {
+  wEngineStore.updateWEnginesReadMoreArray()
+})
 
 if (!currentWEnginePage.value) {
   throw showError({ statusCode: 404, message: 'Амплификатор не найден', fatal: true })
@@ -61,6 +73,13 @@ if (!currentWEnginePage.value) {
 
 .wengine-card-wrapper {
   margin-bottom: 20px;
+  &:deep(.wengine-card) {
+    cursor: default;
+    @include card;
+    &:hover {
+      background-color: $cardBackgroundColor;
+    }
+  }
 }
 
 .wengine-description-wrapper {
@@ -69,9 +88,19 @@ if (!currentWEnginePage.value) {
 }
 
 .character-grid {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 15px;
+}
+
+.wengine-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  gap: 10px;
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 h2 {

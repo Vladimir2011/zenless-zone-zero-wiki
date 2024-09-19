@@ -35,9 +35,10 @@ const props = defineProps({
 .character-small-card {
   display: block;
   position: relative;
+  overflow: hidden;
 
-  width: 130px;
-  height: 160px;
+  width: 100%;
+  min-height: 160px;
 
   border-radius: $borderRadiusCard;
 
@@ -47,6 +48,13 @@ const props = defineProps({
     object-fit: cover;
 
     border-radius: $borderRadiusCard;
+    transition: 0.3s ease;
+    @media (hover: hover) {
+      &:hover {
+        width: 110%;
+        height: 110%;
+      }
+    }
   }
 
   .character-image--s {
@@ -65,6 +73,8 @@ const props = defineProps({
     position: absolute;
     top: 4px;
     left: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
     .icon-item {
       width: 24px;
       height: 24px;

@@ -48,7 +48,7 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
             }
           },
           skill:
-            '<p class="wengine-skill-text">Активируя атаку в рывке, агент получает <b style="color: #eec554">1 ур.</b> эффекта «Инстинкт хищника». Каждый уровень эффекта «Инстинкт хищника» повышает <span style="color: #f0d12b">физический урон</span> агента с этим предметом на <b style="color: #eec554">12-24%</b> на <b style="color: #eec554">10 сек.</b> Эффект суммируется до <b style="color: #eec554">3 ур.</b> и срабатывает один раз в <b style="color: #eec554">0.5 сек.</b> Повторные запуски обнуляют время действия. Выходя на поле боя или активируя идеальное уклонение, агент с этим предметом получает <b style="color: #eec554">3 ур.</b> эффекта «Инстинкт хищника». Если эффект «Инстинкт хищника» на максимальному уровне, эффективность накопления аномалии агента с этим предметом повышается на <b style="color: #eec554">40-80%.</b></p>',
+            '<p class="wengine-skill-text">Активируя атаку в рывке, агент получает <b style="color: #eec554">1 ур.</b> эффекта «Инстинкт хищника». Каждый уровень эффекта «Инстинкт хищника» повышает <span style="color: #f0d12b">физический урон</span> агента с этим предметом на <b style="color: #eec554">12/15/18/21/24%</b> на <b style="color: #eec554">10 сек.</b> Эффект суммируется до <b style="color: #eec554">3 ур.</b> и срабатывает один раз в <b style="color: #eec554">0.5 сек.</b> Повторные запуски обнуляют время действия. Выходя на поле боя или активируя идеальное уклонение, агент с этим предметом получает <b style="color: #eec554">3 ур.</b> эффекта «Инстинкт хищника». Если эффект «Инстинкт хищника» на максимальному уровне, эффективность накопления аномалии агента с этим предметом повышается на <b style="color: #eec554">40/50/60/70/80%.</b></p>',
           rarity: 'S',
           specialty: 'anomaly',
           signature: {
@@ -988,6 +988,10 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
             '<p class="wengine-skill-text">Повышает <span style="color: #98eff0">ледяной урон</span> на <b style="color: #eec554">15/17.5/20/22/24%.</b> При запуске усиленной особой атаки сила атаки всех членов отряда увеличивается на <b style="color: #eec554">2/2.3/2.6/2.9/3.2%.</b> Эффект складывается до <b style="color: #eec554">4 раз</b> и длится <b style="color: #eec554">12 сек.</b> Повторные запуски обнуляют время действия. Одинаковые пассивные эффекты не складываются.</p>',
           rarity: 'A',
           specialty: 'support',
+          signature: {
+            name: 'Сокаку',
+            link: '/wiki/characters/soukaku'
+          },
           characters: [
             {
               id: 1,
@@ -3754,7 +3758,7 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
             }
           },
           skill:
-            '<p class="wengine-skill-text">Активируя атаку в рывке, агент получает <b style="color: #eec554">1 ур.</b> эффекта «Инстинкт хищника». Каждый уровень эффекта «Инстинкт хищника» повышает <span style="color: #f0d12b">физический урон</span> агента с этим предметом на <b style="color: #eec554">12-24%</b> на <b style="color: #eec554">10 сек.</b> Эффект суммируется до <b style="color: #eec554">3 ур.</b> и срабатывает один раз в <b style="color: #eec554">0.5 сек.</b> Повторные запуски обнуляют время действия. Выходя на поле боя или активируя идеальное уклонение, агент с этим предметом получает <b style="color: #eec554">3 ур.</b> эффекта «Инстинкт хищника». Если эффект «Инстинкт хищника» на максимальному уровне, эффективность накопления аномалии агента с этим предметом повышается на <b style="color: #eec554">40-80%.</b></p>',
+            '<p class="wengine-skill-text">Активируя атаку в рывке, агент получает <b style="color: #eec554">1 ур.</b> эффекта «Инстинкт хищника». Каждый уровень эффекта «Инстинкт хищника» повышает <span style="color: #f0d12b">физический урон</span> агента с этим предметом на <b style="color: #eec554">12/15/18/21/24%</b> на <b style="color: #eec554">10 сек.</b> Эффект суммируется до <b style="color: #eec554">3 ур.</b> и срабатывает один раз в <b style="color: #eec554">0.5 сек.</b> Повторные запуски обнуляют время действия. Выходя на поле боя или активируя идеальное уклонение, агент с этим предметом получает <b style="color: #eec554">3 ур.</b> эффекта «Инстинкт хищника». Если эффект «Инстинкт хищника» на максимальному уровне, эффективность накопления аномалии агента с этим предметом повышается на <b style="color: #eec554">40/50/60/70/80%.</b></p>',
           rarity: 'S',
           specialty: 'anomaly',
           signature: {
@@ -4694,6 +4698,10 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
             '<p class="wengine-skill-text">Повышает <span style="color: #98eff0">ледяной урон</span> на <b style="color: #eec554">15/17.5/20/22/24%.</b> При запуске усиленной особой атаки сила атаки всех членов отряда увеличивается на <b style="color: #eec554">2/2.3/2.6/2.9/3.2%.</b> Эффект складывается до <b style="color: #eec554">4 раз</b> и длится <b style="color: #eec554">12 сек.</b> Повторные запуски обнуляют время действия. Одинаковые пассивные эффекты не складываются.</p>',
           rarity: 'A',
           specialty: 'support',
+          signature: {
+            name: 'Сокаку',
+            link: '/wiki/characters/soukaku'
+          },
           characters: [
             {
               id: 1,
@@ -7433,7 +7441,8 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
       filterParams: {
         rarity: '',
         specialty: ''
-      }
+      },
+      wEnginesReadMoreArray: []
     }
   },
 
@@ -7459,6 +7468,25 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
     },
     getWEngineByRouteSlug(slug: string) {
       return this.wEnginesList.find(engine => engine.slug === slug)
+    },
+    updateWEnginesReadMoreArray() {
+      const result = []
+      const route = useRoute()
+
+      for (let i = 0; result.length !== 4; i++) {
+        let randomChoice = this.wEnginesList[Math.floor(Math.random() * this.wEnginesList.length)]
+
+        if (result.some(item => item.id === randomChoice.id) || randomChoice.slug === route.params.wEngineSlug) {
+          continue
+        } else {
+          result.push(randomChoice)
+        }
+      }
+      this.wEnginesReadMoreArray = result
     }
+  },
+
+  getters: {
+    getWEngineReadMoreArray: state => state.wEnginesReadMoreArray
   }
 })

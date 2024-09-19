@@ -24,9 +24,9 @@
           </p>
           <p v-if="wEngine.signature" class="wengine-main-info-text wengine-character-signature">
             Сигна:
-            <nuxt-link :to="wEngine.signature.link" class="wengine-character-link">{{
+            <p class="wengine-character-link">{{
               wEngine.signature.name
-            }}</nuxt-link>
+            }}</p>
           </p>
         </div>
         <div class="wengine-stats-block">
@@ -55,6 +55,8 @@ const props = defineProps({
     default: {}
   }
 })
+
+const router = useRouter()
 </script>
 
 <style scoped lang="scss">
@@ -166,7 +168,7 @@ const props = defineProps({
           .wengine-character-link {
             color: #3ba5ff;
             font-weight: 700;
-            text-decoration: underline;
+            cursor: pointer;
           }
         }
       }

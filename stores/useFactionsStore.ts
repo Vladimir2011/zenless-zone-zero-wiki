@@ -86,7 +86,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Комбинат Белобог',
@@ -176,7 +176,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Сыны Калидона',
@@ -259,7 +259,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Особая группа отдела угрозыска',
@@ -338,7 +338,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Хитрые зайцы',
@@ -425,7 +425,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Отряд ОБОЛ',
@@ -504,7 +504,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Секция 6',
@@ -583,7 +583,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
           },
           {
             name: 'Фракции',
-            link: '/factions'
+            link: '/wiki/factions'
           },
           {
             name: 'Агенство домашнего персонала "Виктория"',
