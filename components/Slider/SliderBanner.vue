@@ -55,10 +55,15 @@ const mainSliderOptions = {
   margin-bottom: 30px;
   border-radius: $borderRadiusCard;
   background-color: $cardBackgroundColor;
+  padding: 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
 
   .banner-image {
     border-radius: $borderRadiusCard;
-    object-fit: contain;
+    object-fit: cover;
     width: 100%;
   }
 }
