@@ -50,7 +50,7 @@ if (!currentDiskDrivePage.value) {
 .disk-drive-wrapper {
   margin-bottom: 20px;
   &:deep(.disk-drive-card) {
-    cursor: default;
+    cursor: auto;
     @include card;
     &:hover {
       background-color: $cardBackgroundColor;

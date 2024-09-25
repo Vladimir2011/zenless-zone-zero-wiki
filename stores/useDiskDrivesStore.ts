@@ -382,7 +382,8 @@ export const useDiskDrivesStore = defineStore('DiskDrivesStore', {
           }
         ],
         name: 'Хаос-Джаз',
-        description: '',
+        description:
+          'Этот драйв-диск подходит лишь опытным пользователям, хорошо разбирающимся, как работает эфирное оборудование.',
         slug: 'chaos-jazz',
         link: '/wiki/disk-drives/chaos-jazz',
         image: 'chaos-jazz.webp',
@@ -411,7 +412,8 @@ export const useDiskDrivesStore = defineStore('DiskDrivesStore', {
           }
         ],
         name: 'Протопанк',
-        description: '',
+        description:
+          'Ассоциация исследователей каверн рекомендует применять этот драйв-диск с осторожностью. Обеспечивает значительный прирост эфира, но требует больше усилий для контроля.',
         slug: 'proto-punk',
         link: '/wiki/disk-drives/proto-punk',
         image: 'proto-punk.webp',

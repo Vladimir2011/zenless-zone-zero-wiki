@@ -1,11 +1,13 @@
 <template>
-  <nuxt-link :to="diskDrive.link" class="disk-drive-card">
+  <div :to="diskDrive.link" class="disk-drive-card">
     <nuxt-img :src="`/disk-drives/${diskDrive.image}`" :alt="diskDrive.name" class="disk-drive-image" />
     <div class="disk-drive-description">
-      <h2 class="disk-drive-name">{{ diskDrive.name }}</h2>
+      <h2 class="disk-drive-name">
+        <nuxt-link :to="diskDrive.link" class="disk-drive-link">{{ diskDrive.name }}</nuxt-link>
+      </h2>
       <div v-html="diskDrive.features" class="disk-drive-description-text-wrapper" />
     </div>
-  </nuxt-link>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -24,8 +26,8 @@ const props = defineProps({
   @include nested-card;
   display: flex;
   gap: 20px;
-  cursor: pointer;
   align-items: center;
+  position: relative;
 
   @media screen and (max-width: 550px) {
     flex-direction: column;
@@ -62,6 +64,14 @@ const props = defineProps({
       @media screen and (max-width: 768px) {
         font-size: 22px;
       }
+
+      .disk-drive-link {
+        &::after {
+          content: '';
+          position: absolute;
+          inset: 0;
+        }
+      }
     }
 
     .disk-drive-description-text-wrapper {
@@ -69,6 +79,7 @@ const props = defineProps({
       flex-direction: column;
       gap: 10px;
       font-size: 18px;
+      position: relative;
 
       @media screen and (max-width: 768px) {
         font-size: 16px;

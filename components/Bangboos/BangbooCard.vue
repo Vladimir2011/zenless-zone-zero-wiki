@@ -40,6 +40,7 @@ const props = defineProps({
     width: 100%;
     height: 100%;
     filter: drop-shadow(2px 4px 0 rgba(0, 0, 0, 0.6));
+    object-fit: contain;
   }
 
   .icons-list {

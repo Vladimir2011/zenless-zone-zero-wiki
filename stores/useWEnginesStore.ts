@@ -6,6 +6,70 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
     return {
       wEnginesList: [
         {
+          id: 49,
+          breadcrumbs: [
+            {
+              name: 'Главная',
+              link: '/'
+            },
+            {
+              name: 'База знаний',
+              link: '/wiki'
+            },
+            {
+              name: 'Амплификаторы',
+              link: '/wiki/wengines'
+            },
+            {
+              name: 'Клыки ярости',
+              link: '/wiki/wengines/tusks-of-fury'
+            }
+          ],
+          name: 'Клыки ярости',
+          description:
+            '<p class="wengine-description-text">Многофункциональный амплификатор, специально созданный на базе колеса от байка. Отличается высокой скоростью, надёжной защитой, неожиданно низким энергопотреблением и внушительным внешним видом. Говорят, что когда-то этот амплификатор был просто игрушкой, которую Папаша сделал для маленькой <a class="wengine-agent-link" style="display: inline; color: #eec554; font-weight: 700" href="/wiki/characters/caesar">Цезарь</a>, но, попадая в её руки, игрушка неизменно оказывалась порванной в клочья. Из-за этого Папаше годами приходилось раз за разом укреплять и усиливать её, и в результате эта вещица превратилась в уникальный гибрид оружия, щита, колеса и даже источника света.</p>',
+          slug: 'tusks-of-fury',
+          link: '/wiki/wengines/tusks-of-fury',
+          image: 'tusks-of-fury.webp',
+          icons: {
+            rarity: 'rarity-s.webp',
+            specialty: 'defense-specialty.webp'
+          },
+          stats: {
+            baseStat: {
+              name: 'Базовая Атака',
+              firstLvl: '48',
+              lastLvl: '714'
+            },
+            mainStat: {
+              name: 'Импульс',
+              firstLvl: '7.2%',
+              lastLvl: '18%'
+            }
+          },
+          skill:
+            '<p class="wengine-skill-text">У агента с этим предметом значение накладываемого щита увеличивается на <b style="color: #eec554">30/38/46/52/60%.</b> Когда любой член отряда активирует прерывание или идеальное уклонение, наносимый персонажами в отряде урон повышается на <b style="color: #eec554">18/22.5/27/31.5/36%</b>, а оглушение — на <b style="color: #eec554">12/15/21/21/24%</b> (эффект действует 20 сек.). Повторные запуски обнуляют время действия. Одноимённые пассивные эффекты не складываются.</p>',
+          rarity: 'S',
+          specialty: 'defense',
+          signature: {
+            name: 'Цезарь',
+            link: '/wiki/characters/caesar'
+          },
+          characters: [
+            {
+              id: 1,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
+            }
+          ]
+        },
+        {
           id: 48,
           breadcrumbs: [
             {
@@ -938,6 +1002,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 2,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },
@@ -1856,6 +1931,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 3,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },
@@ -2371,6 +2457,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 3,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },
@@ -3716,6 +3813,70 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
       ],
       filteredWEnginesList: [
         {
+          id: 49,
+          breadcrumbs: [
+            {
+              name: 'Главная',
+              link: '/'
+            },
+            {
+              name: 'База знаний',
+              link: '/wiki'
+            },
+            {
+              name: 'Амплификаторы',
+              link: '/wiki/wengines'
+            },
+            {
+              name: 'Клыки ярости',
+              link: '/wiki/wengines/tusks-of-fury'
+            }
+          ],
+          name: 'Клыки ярости',
+          description:
+            '<p class="wengine-description-text">Многофункциональный амплификатор, специально созданный на базе колеса от байка. Отличается высокой скоростью, надёжной защитой, неожиданно низким энергопотреблением и внушительным внешним видом. Говорят, что когда-то этот амплификатор был просто игрушкой, которую Папаша сделал для маленькой <a class="wengine-agent-link" style="display: inline; color: #eec554; font-weight: 700" href="/wiki/characters/caesar">Цезарь</a>, но, попадая в её руки, игрушка неизменно оказывалась порванной в клочья. Из-за этого Папаше годами приходилось раз за разом укреплять и усиливать её, и в результате эта вещица превратилась в уникальный гибрид оружия, щита, колеса и даже источника света.</p>',
+          slug: 'tusks-of-fury',
+          link: '/wiki/wengines/tusks-of-fury',
+          image: 'tusks-of-fury.webp',
+          icons: {
+            rarity: 'rarity-s.webp',
+            specialty: 'defense-specialty.webp'
+          },
+          stats: {
+            baseStat: {
+              name: 'Базовая Атака',
+              firstLvl: '48',
+              lastLvl: '714'
+            },
+            mainStat: {
+              name: 'Импульс',
+              firstLvl: '7.2%',
+              lastLvl: '18%'
+            }
+          },
+          skill:
+            '<p class="wengine-skill-text">У агента с этим предметом значение накладываемого щита увеличивается на <b style="color: #eec554">30/38/46/52/60%.</b> Когда любой член отряда активирует прерывание или идеальное уклонение, наносимый персонажами в отряде урон повышается на <b style="color: #eec554">18/22.5/27/31.5/36%</b>, а оглушение — на <b style="color: #eec554">12/15/21/21/24%</b> (эффект действует 20 сек.). Повторные запуски обнуляют время действия. Одноимённые пассивные эффекты не складываются.</p>',
+          rarity: 'S',
+          specialty: 'defense',
+          signature: {
+            name: 'Цезарь',
+            link: '/wiki/characters/caesar'
+          },
+          characters: [
+            {
+              id: 1,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
+            }
+          ]
+        },
+        {
           id: 48,
           breadcrumbs: [
             {
@@ -4648,6 +4809,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 2,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },
@@ -5566,6 +5738,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 3,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },
@@ -6081,6 +6264,17 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
                 specialty: 'defense-specialty.webp'
               },
               rarity: 'A'
+            },
+            {
+              id: 3,
+              name: 'Цезарь',
+              link: '/wiki/characters/caesar',
+              image: 'caesar/caesar-small-card-image.webp',
+              icons: {
+                attribute: 'physical-attribute.webp',
+                specialty: 'defense-specialty.webp'
+              },
+              rarity: 'S'
             }
           ]
         },

@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :to="wEngine.link" class="wengine-card">
+  <div class="wengine-card">
     <div class="wengine-header-wrapper">
       <nuxt-img
         :src="`/wengines/${wEngine.image}`"
@@ -13,7 +13,9 @@
       />
 
       <div class="wengine-header-block">
-        <h2 class="wengine-name">{{ wEngine.name }}</h2>
+        <h2 class="wengine-name">
+          <nuxt-link :to="wEngine.link" class="wengine-link">{{ wEngine.name }}</nuxt-link>
+        </h2>
         <div class="wengine-main-info-block">
           <p class="wengine-main-info-text">
             Редкость: <nuxt-img :src="`/rarities/${wEngine.icons.rarity}`" alt="rarity-icon" class="rarity-image" />
@@ -24,9 +26,9 @@
           </p>
           <p v-if="wEngine.signature" class="wengine-main-info-text wengine-character-signature">
             Сигна:
-            <p class="wengine-character-link">{{
+            <nuxt-link :to="wEngine.signature.link" class="wengine-character-link">{{
               wEngine.signature.name
-            }}</p>
+            }}</nuxt-link>
           </p>
         </div>
         <div class="wengine-stats-block">
@@ -45,7 +47,7 @@
     <div class="wengine-description">
       <div v-html="wEngine.skill" class="wengine-description-text-wrapper" />
     </div>
-  </nuxt-link>
+  </div>
 </template>
 
 <script setup lang="ts">
@@ -65,7 +67,6 @@ const router = useRouter()
 .wengine-card {
   @include nested-card;
   display: flex;
-  cursor: pointer;
   flex-direction: column;
   position: relative;
 
@@ -127,6 +128,7 @@ const router = useRouter()
       display: flex;
       flex-direction: column;
       gap: 10px;
+      width: 100%;
 
       @media screen and (max-width: 550px) {
         gap: 5px;
@@ -138,6 +140,14 @@ const router = useRouter()
         @media screen and (max-width: 768px) {
           font-size: 20px;
         }
+
+        .wengine-link {
+          &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+          }
+        }
       }
 
       .wengine-main-info-block {
@@ -147,6 +157,7 @@ const router = useRouter()
         gap: 10px;
         align-items: baseline;
         font-weight: 300;
+        position: relative;
 
         @media screen and (max-width: 550px) {
           gap: 5px;
@@ -165,10 +176,17 @@ const router = useRouter()
 
         .wengine-character-signature {
           font-weight: 500;
+          position: relative;
           .wengine-character-link {
             color: #3ba5ff;
             font-weight: 700;
             cursor: pointer;
+
+            @media (hover: hover) {
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -201,6 +219,7 @@ const router = useRouter()
     font-size: 18px;
 
     padding-top: 15px;
+    position: relative;
 
     @media screen and (max-width: 768px) {
       font-size: 16px;

@@ -73,5 +73,10 @@ export default defineNuxtConfig({
     asyncContext: true
   },
 
+  devServer: {
+    host: '192.168.1.15',
+    port: '3000'
+  },
+
   compatibilityDate: '2024-08-12'
 })

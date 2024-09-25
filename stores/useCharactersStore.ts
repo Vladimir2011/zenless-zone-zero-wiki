@@ -2,6 +2,23 @@ import { defineStore } from 'pinia'
 
 const defaultCharactersList = [
   {
+    id: 21,
+    name: 'Цезарь',
+    link: '/wiki/characters/caesar',
+    image: 'caesar/caesar-card-image.webp',
+    smallImage: 'caesar/caesar-small-card-image.webp',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'physical-attribute.webp',
+      specialty: 'defense-specialty.webp',
+      faction: 'calydon-faction.webp'
+    },
+    rarity: 'S',
+    attribute: 'physical',
+    specialty: 'defense',
+    faction: 'calydon'
+  },
+  {
     id: 1,
     name: 'Цинъи',
     link: '/wiki/characters/qingyi',

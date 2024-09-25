@@ -74,10 +74,16 @@ if (!currentWEnginePage.value) {
 .wengine-card-wrapper {
   margin-bottom: 20px;
   &:deep(.wengine-card) {
-    cursor: default;
+    cursor: auto;
     @include card;
     &:hover {
       background-color: $cardBackgroundColor;
+    }
+
+    .wengine-link {
+      &::after {
+        display: none;
+      }
     }
   }
 }

@@ -3,15 +3,15 @@
     <Splide class="slider-list" :options="mainSliderOptions">
       <SplideSlide class="slider-item">
         <a href="'/'" class="slider-link" target="_blank">
-          <NuxtImg src="/characters/qingyi/qingyi-image-banner.webp" alt="qingyi" width="100%" class="banner-image" />
+          <NuxtImg src="/characters/caesar/caesar-banner-image.jpeg" alt="caesar" width="100%" class="banner-image" />
         </a>
       </SplideSlide>
 
       <SplideSlide class="slider-item">
         <a href="'/'" class="slider-link" target="_blank">
           <NuxtImg
-            src="/characters/jane-doe/jane-doe-banner-image.webp"
-            alt="jane-doe"
+            src="/characters/burnice/burnice-banner-image.jpeg"
+            alt="burnice"
             width="100%"
             class="banner-image"
           />
@@ -23,7 +23,7 @@
 
 <script setup lang="ts">
 const mainSliderOptions = {
-  type: 'slider',
+  type: 'fade',
   rewind: true,
   width: '100%',
   height: '100%',
