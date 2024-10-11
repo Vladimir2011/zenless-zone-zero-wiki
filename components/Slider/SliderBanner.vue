@@ -2,20 +2,20 @@
   <div class="main-banner-slider">
     <Splide class="slider-list" :options="mainSliderOptions">
       <SplideSlide class="slider-item">
-        <a href="'/'" class="slider-link" target="_blank">
+        <nuxt-link href="/" class="slider-link">
           <NuxtImg src="/characters/caesar/caesar-banner-image.jpeg" alt="caesar" width="100%" class="banner-image" />
-        </a>
+        </nuxt-link>
       </SplideSlide>
 
       <SplideSlide class="slider-item">
-        <a href="'/'" class="slider-link" target="_blank">
+        <nuxt-link href="/" class="slider-link">
           <NuxtImg
             src="/characters/burnice/burnice-banner-image.jpeg"
             alt="burnice"
             width="100%"
             class="banner-image"
           />
-        </a>
+        </nuxt-link>
       </SplideSlide>
     </Splide>
   </div>

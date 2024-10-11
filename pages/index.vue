@@ -15,11 +15,11 @@
       <nuxt-link to="/wiki/factions" class="main-page-button"> Посмотреть все фракции </nuxt-link>
     </section>
 
-    <section class="section news-section">
-      <h2 class="section-title">Новости</h2>
-      <NewsList :news-list="getNewsListForMainPage" />
-      <nuxt-link to="/news" class="main-page-button"> Посмотреть все новости </nuxt-link>
-    </section>
+    <!--    <section class="section news-section">-->
+    <!--      <h2 class="section-title">Новости</h2>-->
+    <!--      <NewsList :news-list="getNewsListForMainPage" />-->
+    <!--      <nuxt-link to="/news" class="main-page-button"> Посмотреть все новости </nuxt-link>-->
+    <!--    </section>-->
   </div>
 </template>
 
