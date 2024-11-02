@@ -3,15 +3,15 @@
     <Splide class="slider-list" :options="mainSliderOptions">
       <SplideSlide class="slider-item">
         <nuxt-link href="/" class="slider-link">
-          <NuxtImg src="/characters/caesar/caesar-banner-image.jpeg" alt="caesar" width="100%" class="banner-image" />
+          <NuxtImg src="/characters/yanagi/yanagi-banner-image.webp" alt="yanagi" width="100%" class="banner-image" />
         </nuxt-link>
       </SplideSlide>
 
       <SplideSlide class="slider-item">
         <nuxt-link href="/" class="slider-link">
           <NuxtImg
-            src="/characters/burnice/burnice-banner-image.jpeg"
-            alt="burnice"
+            src="/characters/lighter/lighter-banner-image.webp"
+            alt="lighter"
             width="100%"
             class="banner-image"
           />

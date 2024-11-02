@@ -2,6 +2,58 @@ import { defineStore } from 'pinia'
 
 const defaultCharactersList = [
   {
+    id: 22,
+    name: 'Бёрнис',
+    description:
+      'Бёрнис — главный миксолог Сынов Калидона. Безнадёжно влюблена в «Нитро-топливо». Отвечает за всё топливо для техники Сынов Калидона. Топливо, топливо, топливо — остальное для неё вторично. Бёрнис — гиперэкстраверт с широкой душой и короткой памятью. Моментально заражает окружающих своим безудержным оптимизмом. «Нравятся мои коктейли? Спасибо! "Зубастик" тоже тащится: двести тонн за раз может усосать!» «Хочешь его любимый микс попробовать? Это просто огни-и-и-и-ище!».',
+    gender: 'Женский',
+    dateOfBirth: '23 мая',
+    height: '160 см',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Персонажи',
+        link: '/wiki/characters'
+      },
+      {
+        name: 'Бёрнис',
+        link: '/wiki/characters/burnice'
+      }
+    ],
+    link: '/wiki/characters/burnice',
+    image: 'burnice/burnice-card-image.webp',
+    smallImage: 'burnice/burnice-small-card-image.webp',
+    bannerImage: 'burnice/burnice-character-page-image.jpg',
+    videoList: [
+      {
+        id: 1,
+        youtubeCode: '0NQPMTJ9rh0?si=QaCvrtRMnXzpFCvi'
+      },
+      {
+        id: 2,
+        youtubeCode: 'ykVaoakTKJY?si=HSC1Gxvk0eTstwCs'
+      }
+    ],
+    slug: 'burnice',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'fire-attribute.webp',
+      specialty: 'anomaly-specialty.webp',
+      faction: 'calydon-faction.webp'
+    },
+    rarity: 'S',
+    attribute: 'fire',
+    specialty: 'anomaly',
+    faction: 'calydon'
+  },
+  {
     id: 21,
     name: 'Цезарь',
     description:

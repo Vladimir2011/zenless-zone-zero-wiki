@@ -6,6 +6,70 @@ export const useWEnginesStore = defineStore('WEnginesStore', {
     return {
       wEnginesList: [
         {
+          id: 50,
+          breadcrumbs: [
+            {
+              name: 'Главная',
+              link: '/'
+            },
+            {
+              name: 'База знаний',
+              link: '/wiki'
+            },
+            {
+              name: 'Амплификаторы',
+              link: '/wiki/wengines'
+            },
+            {
+              name: 'Шейкер-огнемейкер',
+              link: '/wiki/wengines/flamemaker-shaker'
+            }
+          ],
+          name: 'Шейкер-огнемейкер',
+          description:
+            '<p class="wengine-description-text">Модифицированный амплификатор на специальном топливе; обеспечивает оптимальную эффективность сгорания. Топливо из бака под высоким давлением впрыскивается в камеру сгорания, где оно вспыхивает с невероятной температурой, оставляя после себя запах гари. Говорят, амплификатор работает и на «Нитро-топливе»: очевидцы утверждают, будто видели, как <a class="wengine-agent-link" style="display: inline; color: #eec554; font-weight: 700" href="/wiki/characters/burnice">Бёрнис</a> заливала в него этот напиток, а после боя вытряхивала остатки в стакан.</p>',
+          slug: 'flamemaker-shaker',
+          link: '/wiki/wengines/flamemaker-shaker',
+          image: 'flamemaker-shaker.webp',
+          icons: {
+            rarity: 'rarity-s.webp',
+            specialty: 'anomaly-specialty.webp'
+          },
+          stats: {
+            baseStat: {
+              name: 'Базовая Атака',
+              firstLvl: '48',
+              lastLvl: '714'
+            },
+            mainStat: {
+              name: 'Сила атаки',
+              firstLvl: '12%',
+              lastLvl: '30%'
+            }
+          },
+          skill:
+            '<p class="wengine-skill-text">Агент с этим предметом восстанавливает энергию вне боя быстрее на <b style="color: #eec554">0.6/0.75/0.9/1.05/1.2 ед./сек.</b> Когда он попадает по врагу усиленной особой атакой или помощью в атаке, наносимый агентом урон повышается на <b style="color: #eec554">3.5%/4.4%/5.2%/6.1%/7%.</b> Этот эффект срабатывает не чаще раза в <b style="color: #eec554">0.3 сек.</b>, накапливается до <b style="color: #eec554">10 раз</b> и длится <b style="color: #eec554">6 сек.</b> Пока агент находится вне боя, накопление происходит в два раза эффективнее, а повторные запуски обновляют время действия эффекта. Когда агент получает бонус к наносимому урону, если количество активных зарядов эффекта не меньше <b style="color: #eec554">5</b>, знание аномалии у агента с этим предметом повышается на <b style="color: #eec554">50 ед./62 ед./75 ед./87 ед./100 ед.</b> Этот бонус не суммируется и длится <b style="color: #eec554">6 сек.</b></p>',
+          rarity: 'S',
+          specialty: 'anomaly',
+          signature: {
+            name: 'Бёрнис',
+            link: '/wiki/characters/burnice'
+          },
+          characters: [
+            {
+              id: 1,
+              name: 'Бёрнис',
+              link: '/wiki/characters/burnice',
+              image: 'burnice/burnice-small-card-image.webp',
+              icons: {
+                attribute: 'fire-attribute.webp',
+                specialty: 'anomaly-specialty.webp'
+              },
+              rarity: 'S'
+            }
+          ]
+        },
+        {
           id: 49,
           breadcrumbs: [
             {

@@ -11,8 +11,8 @@ export const useHeaderStore = defineStore('HeaderStore', {
       },
       {
         id: 2,
-        title: 'Новости',
-        link: '/news',
+        title: 'Тир лист',
+        link: '/tier-list',
         childrenMenu: []
       },
       {
