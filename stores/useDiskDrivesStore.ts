@@ -420,6 +420,66 @@ export const useDiskDrivesStore = defineStore('DiskDrivesStore', {
         features:
           '<p class="disk-drive-description-text"><b>2 предмета:</b> Значение накладываемых щитов <b style="color: #eec554">+15%</b></p>' +
           '<p class="disk-drive-description-text"><b>4 предмета:</b> Если кто-либо в отряде запускает помощь в защите или помощь в уклонении, все члены отряда наносят на <b style="color: #eec554">15%</b> больше урона в течение <b style="color: #eec554">10 сек.</b> Одноимённые пассивные эффекты не складываются.</p>'
+      },
+      {
+        id: 14,
+        breadcrumbs: [
+          {
+            name: 'Главная',
+            link: '/'
+          },
+          {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
+            name: 'Драйв диски',
+            link: '/wiki/disk-drives'
+          },
+          {
+            name: 'Песнь о ветке и клинке',
+            link: '/wiki/disk-drives/branch-blade-song'
+          }
+        ],
+        name: 'Песнь о ветке и клинке',
+        description:
+          'Эта песня, сложенная по мотивам известной «Легенды о клинке и ветке», описывает странствия юноши-великого мечника, его подвиги и борьбу со злом. Говорят, что описанный в легенде юноша — это некий одарённый мечник из семьи Хосими.',
+        slug: 'branch-blade-song',
+        link: '/wiki/disk-drives/branch-blade-song',
+        image: 'branch-blade-song.webp',
+        features:
+          '<p class="disk-drive-description-text"><b>2 предмета:</b> Крит. урон <b style="color: #eec554">+16%</b></p>' +
+          '<p class="disk-drive-description-text"><b>4 предмета:</b> Если контроль аномалии агента с этим предметом не ниже <b style="color: #eec554">115 ед.</b>, этот агент наносит на <b style="color: #eec554">30%</b> больше крит. урона. Когда любой член отряда накладывает на противника <span style="color: #98eff0">Заморозку</span> или запускает <span style="color: #98eff0">Раскалывание</span>, шанс крит. попадания агента с этим предметом повышается на <b style="color: #eec554">12%</b> на <b style="color: #eec554">15 сек.</b></p>'
+      },
+      {
+        id: 14,
+        breadcrumbs: [
+          {
+            name: 'Главная',
+            link: '/'
+          },
+          {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
+            name: 'Драйв диски',
+            link: '/wiki/disk-drives'
+          },
+          {
+            name: 'Астральный голос',
+            link: '/wiki/disk-drives/astral-voice'
+          }
+        ],
+        name: 'Астральный голос',
+        description:
+          'Этот драйв-диск создан рейдером каверн и фанатом Астры Яо. В качестве музыкальной основы выбраны самые знаменитые треки Астры, а на обороте коробки рейдер записал собственную историю.',
+        slug: 'astral-voice',
+        link: '/wiki/disk-drives/astral-voice',
+        image: 'astral-voice.webp',
+        features:
+          '<p class="disk-drive-description-text"><b>2 предмета:</b> Сила атаки <b style="color: #eec554">+10%</b></p>' +
+          '<p class="disk-drive-description-text"><b>4 предмета:</b> Когда любой член отряда выходит на поле боя с быстрой помощью, весь отряд получает <b style="color: #eec554">1 ур.</b> эффекта <b style="color: #eec554">«Астра» (макс. 3 ур.)</b> на <b style="color: #eec554">15 сек.</b> Повторные запуски обновляют время действия. Каждый уровень эффекта <b style="color: #eec554">«Астра»</b> повышает урон, наносимый персонажем, выполняющим быструю помощь, на <b style="color: #eec554">8%.</b> Одновременно для отряда может действовать лишь один эффект.</p>'
       }
     ],
     diskDrivesPageBreadcrumbs: [
@@ -440,10 +500,10 @@ export const useDiskDrivesStore = defineStore('DiskDrivesStore', {
   }),
   actions: {
     getDiskDriveByRouteSlug(slug: string) {
-      return this.diskDrivesList.find(drive => drive.slug === slug)
+      return this.diskDrivesList.find((drive: any) => drive.slug === slug)
     },
     updateDiskDrivesReadMoreArray() {
-      const result = []
+      const result: any[] = []
       const route = useRoute()
 
       for (let i = 0; result.length !== 3; i++) {

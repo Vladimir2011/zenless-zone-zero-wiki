@@ -2,6 +2,242 @@ import { defineStore } from 'pinia'
 
 const defaultCharactersList = [
   {
+    id: 26,
+    name: 'Мияби',
+    description:
+      'Хосими Мияби, командир Секции 6 Службы спецопераций.\n' +
+      '\n' +
+      'Мияби часто участвует в полевых заданиях, но до сих пор не помнит, на каком этаже проходят ежемесячные совещания.\n' +
+      '\n' +
+      'Даже если вам доведётся увидеть Мияби в офисе, то вряд ли она в это время будет заполнять отчёты. Скорее всего, она будет точить свою катану.\n' +
+      '\n' +
+      'За свои подвиги Хосими Мияби получила титул Охотницы каверн — это выделяет её даже среди элитных бойцов Секции 6.\n' +
+      '\n' +
+      'Она пользуется огромной популярностью среди горожан.\n' +
+      '\n' +
+      'Однажды Мияби случайно зашла на собрание фан-клуба Мияби, но все подумали, что это необычайно достоверный косплей. Существует (и высоко ценится) видео этого события.\n' +
+      '\n' +
+      'Хосими Мияби откровенна и прагматична. Она не просто мастер меча, одержимая своим искусством и не думающая об окружающих.\n' +
+      '\n' +
+      'Все знакомые Хосими Мияби говорят в один голос — она всегда стремится к справедливости, и если ради справедливости нужно будет перевернуть всё вверх дном — её это не остановит.\n' +
+      '\n' +
+      'Хосими Мияби — наследница знатной в Нью-Эриду семьи мастеров меча. По некоторым источникам, мать Мияби ушла из жизни совсем молодой, а взаимоотношения с отцом у Мияби непростые.',
+    gender: 'Женщина',
+    dateOfBirth: '19 июня',
+    height: '170 см (с ушами)',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Персонажи',
+        link: '/wiki/characters'
+      },
+      {
+        name: 'Мияби',
+        link: '/wiki/characters/miyabi'
+      }
+    ],
+    link: '/wiki/characters/miyabi',
+    image: 'miyabi/miyabi-card-image.webp',
+    smallImage: 'miyabi/miyabi-small-card-image.webp',
+    bannerImage: 'miyabi/miyabi-character-page-image.webp',
+    videoList: [
+      {
+        id: 1,
+        youtubeCode: 'vw63hN_9scA?si=fyTIGn8idM0BES2G'
+      },
+      {
+        id: 2,
+        youtubeCode: 'E-QNfpTlJ3Q?si=CZWCGIu6oLoQEEGa'
+      },
+      {
+        id: 3,
+        youtubeCode: 'MSncQJ-pRbM?si=kwQEKZnW1W_VPTzg'
+      }
+    ],
+    slug: 'miyabi',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'frost-attribute.webp',
+      specialty: 'anomaly-specialty.webp',
+      faction: 'section6-faction.png'
+    },
+    rarity: 'S',
+    attribute: 'frost',
+    specialty: 'attack',
+    faction: 'section6'
+  },
+  {
+    id: 25,
+    name: 'Харумаса',
+    description:
+      'Асаба Харумаса, агент Секции 6 Службы спецопераций в кавернах. С детства обладает исключительной устойчивостью к эфиру. Будучи крайне одарённым юношей, после окончания учёбы с отличием поступил на службу в ССК. Изначально состоял в некоем элитном подразделении Службы, но позже по ряду причин покинул его и присоединился к отряду Мияби. Характер беспечный, утруждать себя не любит. Обычно его устраивают минимально приемлемые результаты, требующие как можно меньше усилий. Выполнив (крайне, впрочем, эффективно) свои обязанности по минимуму, он стремится поскорее использовать всё оставшееся рабочее время для отдыха (иначе говоря, для отлынивания). Утверждает, что выбрал лук в качестве оружия по той же причине: «меньше беготни». Харумаса отличается слабым здоровьем, и излишнее напряжение иногда вызывает у него ухудшение симптомов. После этого он, как правило, использует это обстоятельство, чтобы запросить очередной больничный. Чем именно он на этих больничных занимается — не знает никто, но почти наверняка не отдыхает. Асаба Харумаса страдает от редкого заболевания: синдрома злокачественной устойчивости к эфиру. Оно характеризуется мутациями различных органов, которые подрывают здоровье больного, но при этом дают ему необыкновенно высокую устойчивость к эфиру. На поздних стадиях болезни состояние организма стремительно ухудшается: устойчивость к эфиру резко падает, утрачиваются функции органов чувств, развивается сильнейшая боль. Если терминальная стадия застаёт пациента в каверне, он быстро превращается в эфириала. Больные с синдромом злокачественной устойчивости к эфиру живут недолго: пациент, проживший с этим диагнозом дольше всего, умер в возрасте 26 лет. В настоящее время эта болезнь считается неизлечимой.',
+    gender: 'Мужской',
+    dateOfBirth: '19 июля',
+    height: '173 см',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Персонажи',
+        link: '/wiki/characters'
+      },
+      {
+        name: 'Харумаса',
+        link: '/wiki/characters/harumasa'
+      }
+    ],
+    link: '/wiki/characters/harumasa',
+    image: 'harumasa/harumasa-card-image.webp',
+    smallImage: 'harumasa/harumasa-small-card-image.webp',
+    bannerImage: 'harumasa/harumasa-character-page-image.webp',
+    videoList: [
+      {
+        id: 1,
+        youtubeCode: '_3rq5fpGt0o?si=MNdagzv74tVBVDpc'
+      }
+    ],
+    slug: 'harumasa',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'electric-attribute.webp',
+      specialty: 'attack-specialty.webp',
+      faction: 'section6-faction.png'
+    },
+    rarity: 'S',
+    attribute: 'electric',
+    specialty: 'attack',
+    faction: 'section6'
+  },
+  {
+    id: 24,
+    name: 'Лайтер',
+    description:
+      'Лайтер — чемпион Сынов Калидона и бывший наёмник.\n' +
+      '\n' +
+      'Чемпионы банд на Объездной обязаны драться с сильнейшими бойцами соперников — как правило, на дуэлях. От их побед зависит боевой дух и слава всей их банды.\n' +
+      '\n' +
+      '«Чемпион может погибнуть, но не проиграть».\n' +
+      '\n' +
+      'Красный шарф — отличительный знак чемпиона Сынов Калидона.\n' +
+      '\n' +
+      'Противник может не знать самого Лайтера, но сразу догадается о его титуле, увидев тот самый шарф.\n' +
+      '\n' +
+      'Насколько известно, Лайтер предпочитает не привлекать к своей персоне излишнее внимание, и устраивает «показательные выступления» только когда исполняет обязанности чемпиона.\n' +
+      '\n' +
+      'Примечание: Лайтер — второй Красный Шарф Сынов Калидона. Своего предшественника он в шутку называет «братом».\n' +
+      '\n' +
+      'Когда-то Лайтер был командиром наёмников.\n' +
+      '\n' +
+      'После ужасного происшествия он распустил свой отряд и влез в огромные долги: чтобы расплатиться с ними, ему пришлось драться на подпольных боях. Там его и нашел Папаша, который выплатил за Лайтера огромную сумму и дал ему должность, ранее принадлежавшую Билли.',
+    gender: 'Мужской',
+    dateOfBirth: '27 декабря',
+    height: '185 см',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Персонажи',
+        link: '/wiki/characters'
+      },
+      {
+        name: 'Лайтер',
+        link: '/wiki/characters/lighter'
+      }
+    ],
+    link: '/wiki/characters/lighter',
+    image: 'lighter/lighter-card-image.webp',
+    smallImage: 'lighter/lighter-small-card-image.png',
+    bannerImage: 'lighter/lighter-character-page-image.webp',
+    videoList: [
+      {
+        id: 1,
+        youtubeCode: 'wKByj5l5HKQ?si=IwmEEV97qwOkE2mx'
+      }
+    ],
+    slug: 'lighter',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'fire-attribute.webp',
+      specialty: 'stun-specialty.webp',
+      faction: 'calydon-faction.webp'
+    },
+    rarity: 'S',
+    attribute: 'fire',
+    specialty: 'stun',
+    faction: 'calydon'
+  },
+  {
+    id: 23,
+    name: 'Янаги',
+    description:
+      'Цукисиро Янаги — заместитель командира и аналитик Секции 6 Службы спецопераций в кавернах. Основные задачи: управление кадрами Секции 6, контроль выполнения заданий, подготовка отчётов по выполненным заданиям, сбор разведданных, боевая поддержка и др. Кроме того, Цукисиро Янаги является попечительницей сотрудницы Секции 6 Сокаку, заботится о ней в повседневной жизни и контролирует её работу. Ввиду того, что командир Секции 6, Хосими Мияби, имеет специфический склад характера, сотрудник Асаба Харумаса не отличается рабочим рвением, а сотрудница Сокаку по складу характера является ребёнком, основная рабочая нагрузка в Секции 6 падает на плечи Цукисиро Янаги. Будучи ответственной и прилежной сотрудницей, Цукисиро Янаги в каком-то смысле является единственным «нормальным человеком» во всей Секции 6. Именно благодаря её контролю и руководству трое других сотрудников Секции 6 могут действовать как слаженная боевая единица. Цукисиро Янаги отличается высокими способностями в самых разных сферах, в частности — в сфере управления. Однако, судя по обрывочным данным, Цукисиро Янаги в жизни может быть весьма рассеянной.',
+    gender: 'Женский',
+    dateOfBirth: '21 сентября',
+    height: '169 см',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Персонажи',
+        link: '/wiki/characters'
+      },
+      {
+        name: 'Янаги',
+        link: '/wiki/characters/yanagi'
+      }
+    ],
+    link: '/wiki/characters/yanagi',
+    image: 'yanagi/yanagi-card-image.webp',
+    smallImage: 'yanagi/yanagi-small-card-image.webp',
+    bannerImage: 'yanagi/yanagi-character-page-image.webp',
+    videoList: [
+      {
+        id: 1,
+        youtubeCode: 'UcjFp9_0flo?si=cUQO_wOUX8dOAlDG'
+      },
+      {
+        id: 2,
+        youtubeCode: '_-E2gjaiMhI?si=cfbhTWlHMqPoSTAk'
+      }
+    ],
+    slug: 'yanagi',
+    icons: {
+      rarity: 'rarity-s.webp',
+      attribute: 'electric-attribute.webp',
+      specialty: 'anomaly-specialty.webp',
+      faction: 'section6-faction.png'
+    },
+    rarity: 'S',
+    attribute: 'electric',
+    specialty: 'anomaly',
+    faction: 'section6'
+  },
+  {
     id: 22,
     name: 'Бёрнис',
     description:
@@ -1223,7 +1459,7 @@ const defaultCharactersList = [
 export const useCharactersStore = defineStore('CharactersStore', {
   state: () => ({
     charactersList: defaultCharactersList,
-    filteredCharactersList: defaultCharactersList,
+    filteredCharactersList: [],
     charactersPageBreadcrumbs: [
       {
         name: 'Главная',
@@ -1249,10 +1485,10 @@ export const useCharactersStore = defineStore('CharactersStore', {
   }),
   actions: {
     getCharacterByRouteSlug(slug: string) {
-      return this.charactersList.find(character => character.slug === slug)
+      return this.charactersList.find((character: any) => character.slug === slug)
     },
     updateCharactersReadMoreArray() {
-      const result = []
+      const result: any[] = []
       const route = useRoute()
 
       for (let i = 0; result.length !== 4; i++) {
@@ -1266,7 +1502,7 @@ export const useCharactersStore = defineStore('CharactersStore', {
       }
       this.charactersReadMoreArray = result
     },
-    selectFaction(faction) {
+    selectFaction(faction: any) {
       this.selectedFaction = faction.name
     },
     resetFilters() {
@@ -1279,20 +1515,20 @@ export const useCharactersStore = defineStore('CharactersStore', {
       this.selectedFaction = 'Выберите фракцию'
       this.filteredCharactersList = defaultCharactersList
     },
-    setRarityFilterParam(rarity) {
+    setRarityFilterParam(rarity: any) {
       this.filterParams.rarity = rarity.name
     },
-    setAttributeFilterParam(attribute) {
+    setAttributeFilterParam(attribute: any) {
       this.filterParams.attribute = attribute.name
     },
-    setSpecialtyFilterParam(specialty) {
+    setSpecialtyFilterParam(specialty: any) {
       this.filterParams.specialty = specialty.name
     },
-    setFactionFilterParam(faction) {
+    setFactionFilterParam(faction: any) {
       this.filterParams.faction = faction.filterName
     },
     filterCharactersList() {
-      this.filteredCharactersList = this.charactersList.filter(character => {
+      this.filteredCharactersList = this.charactersList.filter((character: any) => {
         const { rarity, attribute, specialty, faction } = this.filterParams
         return (
           (rarity === '' || character.rarity === rarity) &&
@@ -1306,25 +1542,25 @@ export const useCharactersStore = defineStore('CharactersStore', {
   getters: {
     getCharactersReadMoreArray: state => state.charactersReadMoreArray,
     getBelobogCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'belobog')
+      return this.charactersList.filter((character: any) => character.faction === 'belobog')
     },
     getCalydonCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'calydon')
+      return this.charactersList.filter((character: any) => character.faction === 'calydon')
     },
     getCriminalCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'criminal')
+      return this.charactersList.filter((character: any) => character.faction === 'criminal')
     },
     getCunningHaresCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'cunning-hares')
+      return this.charactersList.filter((character: any) => character.faction === 'cunning-hares')
     },
     getObolCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'obols-squad')
+      return this.charactersList.filter((character: any) => character.faction === 'obols-squad')
     },
     getSection6CharactersList() {
-      return this.charactersList.filter(character => character.faction === 'section6')
+      return this.charactersList.filter((character: any) => character.faction === 'section6')
     },
     getVictoriaCharactersList() {
-      return this.charactersList.filter(character => character.faction === 'victoria')
+      return this.charactersList.filter((character: any) => character.faction === 'victoria')
     },
     getAllAttackCharactersForSmallCardList() {
       const result = []

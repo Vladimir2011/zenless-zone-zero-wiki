@@ -98,6 +98,13 @@ export const useConstants = () => {
     },
     {
       id: 5,
+      name: 'frost',
+      image: 'frost-attribute.webp',
+      alt: 'frost-attribute',
+      tooltip: 'Мороз'
+    },
+    {
+      id: 6,
       name: 'physical',
       image: 'physical-attribute.webp',
       alt: 'physical-attribute',

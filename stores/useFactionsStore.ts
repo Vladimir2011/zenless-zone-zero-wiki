@@ -85,6 +85,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
             link: '/'
           },
           {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
             name: 'Фракции',
             link: '/wiki/factions'
           },
@@ -175,6 +179,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
             link: '/'
           },
           {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
             name: 'Фракции',
             link: '/wiki/factions'
           },
@@ -258,6 +266,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
             link: '/'
           },
           {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
             name: 'Фракции',
             link: '/wiki/factions'
           },
@@ -335,6 +347,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
           {
             name: 'Главная',
             link: '/'
+          },
+          {
+            name: 'Вики',
+            link: '/wiki'
           },
           {
             name: 'Фракции',
@@ -424,6 +440,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
             link: '/'
           },
           {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
             name: 'Фракции',
             link: '/wiki/factions'
           },
@@ -501,6 +521,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
           {
             name: 'Главная',
             link: '/'
+          },
+          {
+            name: 'Вики',
+            link: '/wiki'
           },
           {
             name: 'Фракции',
@@ -582,6 +606,10 @@ export const useFactionsStore = defineStore('FactionsStore', {
             link: '/'
           },
           {
+            name: 'Вики',
+            link: '/wiki'
+          },
+          {
             name: 'Фракции',
             link: '/wiki/factions'
           },
@@ -656,7 +684,7 @@ export const useFactionsStore = defineStore('FactionsStore', {
   }),
   actions: {
     getFactionByRouteSlug(slug: string) {
-      return this.factionListForPages.find(faction => faction.slug === slug)
+      return this.factionListForPages.find((faction: any) => faction.slug === slug)
     }
   }
 })

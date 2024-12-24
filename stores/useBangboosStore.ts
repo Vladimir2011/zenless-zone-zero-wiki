@@ -1,5 +1,230 @@
 const defaultBangboosList = [
   {
+    id: 27,
+    name: 'Агент Гулливер',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Банбу',
+        link: '/wiki/bangboos'
+      },
+      {
+        name: 'Агент Гулливер',
+        link: '/wiki/bangboos/agent-gulliver'
+      }
+    ],
+    description: 'Открывайте! Проверка безопасности!',
+    commonDescription: '',
+    stats: {
+      hp: '4210',
+      atk: '8380',
+      def: '666',
+      critRate: '50%',
+      critDmg: '100%',
+      impact: '103'
+    },
+    skills: {
+      a: {
+        name: 'Экстренные меры',
+        description:
+          '<p class="bangboo-description-text"><b>Активный навык:</b> Банбу выполняет три этапа проникающих атак, нанося <span style="color: #2eb6ff">электрический урон</span> и накапливая у врага аномалию <span style="color: #2eb6ff">электрического атрибута.</span></p>'
+      },
+      b: {
+        name: 'Штурмовой отряд банбу',
+        description:
+          '<p class="bangboo-description-text"><b>Дополнительная способность:</b> Активируется, если в отряде есть хотя бы <b style="color: #eec554">2 агента из Секции 6 Службы спецопераций в кавернах.</b> Когда активный навык и цепочка атак банбу попадают по врагам в состоянии <span style="color: #2eb6ff">Шока</span>, наносимый врагам урон повышается на <b style="color: #eec554">60%.</b> Когда банбу атакует врагов с аномалией любого атрибута, кроме <span style="color: #2eb6ff">электрического</span>, атаки накапливают на <b style="color: #eec554">120%</b> больше аномалии атрибута.</p>'
+      },
+      c: {
+        name: 'Момент штурма',
+        description:
+          '<p class="bangboo-description-text"><b>Цепочка атак:</b> Банбу один раз стреляет (выполняет мощную проникающую атаку), нанося <span style="color: #2eb6ff">электрический урон</span> и значительно увеличивая накопление аномалии <span style="color: #2eb6ff">электрического атрибута.</span></p>'
+      }
+    },
+    slug: 'agent-gulliver',
+    link: '/wiki/bangboos/agent-gulliver',
+    icons: {
+      rarity: 'rarity-s.webp'
+    },
+    image: 'agent-gulliver/bangboo-agent-gulliver.webp',
+    rarity: 'S'
+  },
+  {
+    id: 26,
+    name: 'Борьбу',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Банбу',
+        link: '/wiki/bangboos'
+      },
+      {
+        name: 'Борьбу',
+        link: '/wiki/bangboos/brawlerboo'
+      }
+    ],
+    description: 'Десять тысяч энне-ударов в день!',
+    commonDescription: '',
+    stats: {
+      hp: '4632',
+      atk: '5826',
+      def: '781',
+      critRate: '50%',
+      critDmg: '100%',
+      impact: '100'
+    },
+    skills: {
+      a: {
+        name: 'Удар-метеор!',
+        description:
+          '<p class="bangboo-description-text"><b>Активный навык:</b> При использовании приёма накапливает силы и взлетает вверх, переходя в состояние <b style="color: #eec554">«Взлёт».</b> Если агент попадает по врагу тяжёлым ударом, когда Борьбу находится в состоянии <b style="color: #eec554">«Взлёт»,</b> то Борьбу совершает пикирующую атаку и наносит цели <span style="color: #ff5521">огненный урон.</span></p>'
+      },
+      b: {
+        name: 'Открывающий удар',
+        description:
+          '<p class="bangboo-description-text"><b>Дополнительная способность:</b> Активируется, если в отряде есть агент со специальностью <b style="color: #eec554">Нападение</b> или <b style="color: #eec554">Аномалия:</b> когда бой начинается, Борьбу заранее переходит в состояние <b style="color: #eec554">«Взлёт».</b> Первая запущенная пикирующая атака наносит на  <b style="color: #eec554">240%</b> больше урона.</p>'
+      },
+      c: {
+        name: 'Шторм ударов',
+        description:
+          '<p class="bangboo-description-text"><b>Цепочка атак:</b> Подпрыгивает вверх и производит серию ударов по врагам в большой области впереди, нанося <span style="color: #ff5521">огненный урон.</span></p>'
+      }
+    },
+    slug: 'brawlerboo',
+    link: '/wiki/bangboos/brawlerboo',
+    icons: {
+      rarity: 'rarity-a.webp'
+    },
+    image: 'brawlerboo/bangboo-brawlerboo.webp',
+    rarity: 'A'
+  },
+  {
+    id: 25,
+    name: 'Рыцарьбу',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Банбу',
+        link: '/wiki/bangboos'
+      },
+      {
+        name: 'Рыцарьбу',
+        link: '/wiki/bangboos/knightboo'
+      }
+    ],
+    description: 'Скакать могу и я, и мой скакун!',
+    commonDescription: '',
+    stats: {
+      hp: '4632',
+      atk: '5826',
+      def: '781',
+      critRate: '50%',
+      critDmg: '100%',
+      impact: '100'
+    },
+    skills: {
+      a: {
+        name: 'Рыцарь, заряжайся!',
+        description:
+          '<p class="bangboo-description-text"><b>Активный навык:</b> Несколько раз подпрыгивает на Коняшке и призывает <b style="color: #eec554">3 рыцарские звёздочки</b>, которые восстанавливают энергию персонажу, <b style="color: #eec554">коснувшемуся их.</b></p>'
+      },
+      b: {
+        name: 'Рыцарственность',
+        description:
+          '<p class="bangboo-description-text"><b>Дополнительная способность:</b> Активируется, если в отряде есть агент со специальностью <b style="color: #eec554">«Поддержка»:</b> когда персонаж касается рыцарской звёздочки, его сила атаки повышается на <b style="color: #eec554">40 + уровень банбу ×2 ед. на 10 сек.</b></p>'
+      },
+      c: {
+        name: 'Рыцарь, прыг-скок в бой!',
+        description:
+          '<p class="bangboo-description-text"><b>Цепочка атак:</b> Банбу призывает <b style="color: #eec554">3 Коняшек</b>, которые до <b style="color: #eec554">10 раз</b> топчут врагов в области перед собой, нанося им <span style="color: #fe437e">эфирный урон.</span></p>'
+      }
+    },
+    slug: 'knightboo',
+    link: '/wiki/bangboos/knightboo',
+    icons: {
+      rarity: 'rarity-a.webp'
+    },
+    image: 'knightboo/bangboo-knightboo.webp',
+    rarity: 'A'
+  },
+  {
+    id: 24,
+    name: 'Злобнобу',
+    breadcrumbs: [
+      {
+        name: 'Главная',
+        link: '/'
+      },
+      {
+        name: 'Вики',
+        link: '/wiki'
+      },
+      {
+        name: 'Банбу',
+        link: '/wiki/bangboos'
+      },
+      {
+        name: 'Злобнобу',
+        link: '/wiki/bangboos/baddieboo'
+      }
+    ],
+    description: 'Не связывайся с ним. Когда он не в духе, он не посмотрит, человек перед ним или банбу!',
+    commonDescription: '',
+    stats: {
+      hp: '3828',
+      atk: '6570',
+      def: '781',
+      critRate: '50%',
+      critDmg: '100%',
+      impact: '94'
+    },
+    skills: {
+      a: {
+        name: 'Ракетный обстрел',
+        description:
+          '<p class="bangboo-description-text"><b>Активный навык:</b> Банбу выпускает по врагу ракеты и метает коктейли Молотова, нанося <span style="color: #ff5521">огненный урон.</span></p>'
+      },
+      b: {
+        name: 'Исключительная взрывоопасность',
+        description:
+          '<p class="bangboo-description-text"><b>Дополнительная способность:</b> Активируется, если в отряде есть хотя бы один агент со специальностью <b style="color: #eec554">Аномалия.</b>\n' +
+          'Цепочки атак банбу наносят на <b style="color: #eec554">40%</b> больше урона врагам и дополнительно на <b style="color: #eec554">30%</b> больше урона, если враг — <b style="color: #eec554">биоорганизм.</b></p>'
+      },
+      c: {
+        name: 'Ракетный удар!',
+        description:
+          '<p class="bangboo-description-text"><b>Цепочка атак:</b> Банбу прыгает вперёд и выпускает ракету, нанося <span style="color: #ff5521">огненный урон</span> врагам в большой области перед собой.</p>'
+      }
+    },
+    slug: 'baddieboo',
+    link: '/wiki/bangboos/baddieboo',
+    icons: {
+      rarity: 'rarity-a.webp'
+    },
+    image: 'baddieboo/bangboo-baddieboo.webp',
+    rarity: 'A'
+  },
+  {
     id: 23,
     name: 'Красный Моккус',
     breadcrumbs: [
@@ -1351,21 +1576,21 @@ export const useBangboosStore = defineStore('BangboosStore', {
         rarity: ''
       }
     },
-    setRarityFilterParam(rarity) {
+    setRarityFilterParam(rarity: any) {
       this.filterParams.rarity = rarity.name
     },
     filterBangboosList() {
-      this.filteredBangboosList = this.bangboosList.filter(bangboo => {
+      this.filteredBangboosList = this.bangboosList.filter((bangboo: any) => {
         const { rarity } = this.filterParams
 
         return rarity === bangboo.rarity
       })
     },
-    getBangbooBySlug(slug) {
-      return this.bangboosList.find(bangboo => bangboo.slug === slug)
+    getBangbooBySlug(slug: string) {
+      return this.bangboosList.find((bangboo: any) => bangboo.slug === slug)
     },
     updateBangbooReadMoreArray() {
-      const result = []
+      const result: any[] = []
       const route = useRoute()
 
       for (let i = 0; result.length !== 4; i++) {
